@@ -14,6 +14,10 @@ app.config(['$routeProvider',
 			templateUrl: 'views/certificado.html',
 			controller: 'munController'
 		})
+		.when('/contact-us', {
+			templateUrl: 'views/contact-us.html',
+			controller: 'munController'
+		})
 		.when('/:reg', {
 			templateUrl: 'views/jac.html',
 			controller: 'munController'

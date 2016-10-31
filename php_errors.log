@@ -518,3 +518,81 @@ Stack trace:
 [25-Oct-2016 19:59:21 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
 [25-Oct-2016 19:59:21 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
 [25-Oct-2016 19:59:21 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:214-231}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[31-Oct-2016 20:54:51 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:54:51 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:54:51 UTC] PHP Stack trace:
+[31-Oct-2016 20:54:51 UTC] PHP Stack trace:
+[31-Oct-2016 20:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:54:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:55:26 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:55:26 UTC] PHP Stack trace:
+[31-Oct-2016 20:55:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:55:26 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:55:26 UTC] PHP Stack trace:
+[31-Oct-2016 20:55:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:55:58 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:55:58 UTC] PHP Stack trace:
+[31-Oct-2016 20:55:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:01 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:01 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:10 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:10 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:10 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:10 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:13 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:13 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:13 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:13 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:22 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:22 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:56:22 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:56:22 UTC] PHP Stack trace:
+[31-Oct-2016 20:56:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:57:18 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:57:18 UTC] PHP Stack trace:
+[31-Oct-2016 20:57:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:57:19 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:57:19 UTC] PHP Stack trace:
+[31-Oct-2016 20:57:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:57:19 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:57:19 UTC] PHP Stack trace:
+[31-Oct-2016 20:57:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 20:57:28 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 20:57:28 UTC] PHP Stack trace:
+[31-Oct-2016 20:57:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:09:09 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:09:09 UTC] PHP Stack trace:
+[31-Oct-2016 21:09:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:09:09 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:09:09 UTC] PHP Stack trace:
+[31-Oct-2016 21:09:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:09:24 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:09:24 UTC] PHP Stack trace:
+[31-Oct-2016 21:09:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:09:24 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:09:24 UTC] PHP Stack trace:
+[31-Oct-2016 21:09:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:09:34 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:09:34 UTC] PHP Stack trace:
+[31-Oct-2016 21:09:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:09:34 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:09:34 UTC] PHP Stack trace:
+[31-Oct-2016 21:09:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:10:33 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:10:33 UTC] PHP Stack trace:
+[31-Oct-2016 21:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:10:33 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:10:33 UTC] PHP Stack trace:
+[31-Oct-2016 21:10:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:10:43 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:10:43 UTC] PHP Stack trace:
+[31-Oct-2016 21:10:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[31-Oct-2016 21:10:43 UTC] PHP Fatal error:  Cannot redeclare class DbHandler in /home/ubuntu/workspace/validar.php on line 31
+[31-Oct-2016 21:10:43 UTC] PHP Stack trace:
+[31-Oct-2016 21:10:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0

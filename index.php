@@ -124,7 +124,7 @@
                             </ul>
                         </li>
                         <li><a href="#/blog">Comunicaciones</a></li>
-                        <li><a href="contact-us.html">PQRs</a></li>
+                        <li><a href="#/contact-us">PQRs</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->

@@ -7,7 +7,7 @@ header("Location: login.html");
 exit();
 }
  
-$db = new DbHandler();
+$db = new DbHandler2();
     $result = $db->getAllRecords("SELECT * from Usuarios where user='" . $usuario . "'");
   if ($result != NULL) {
 		foreach($result as $page){
@@ -28,14 +28,14 @@ $db = new DbHandler();
     }
  
  
- class DbHandler {
+ class DbHandler2 {
 
     private $conn;
 
     function __construct() {
-        require_once 'dbConnect.php';
+        require_once 'dbConnect2.php';
         // opening db connection
-        $db = new dbConnect();
+        $db = new dbConnect2();
         $this->conn = $db->connect();
     }
     /**
