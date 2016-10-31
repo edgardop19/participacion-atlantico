@@ -1,0 +1,15 @@
+ <h3>Resoluciones</h3>
+<table id="tabled" class="table table-hover">
+    <thead>
+      <tr>
+        <th>Titulo</th>
+        <th>Palabras claves</th>
+      </tr>
+    </thead>
+    <tbody ng-init="listsDoc2()">
+      <tr ng-repeat="doc in docs">
+        <td><a href="{{doc.RUTA}}">{{doc.DESCRIPCION}}</a></td>
+        <td>{{doc.PALABRAS_CLAVES}}</td>
+      </tr>
+    </tbody>
+  </table>

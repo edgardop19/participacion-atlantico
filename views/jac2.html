@@ -1,0 +1,16 @@
+ <h2>prueba</h2>
+ 
+ <ul class="list-group" ng-init="listsJac()">
+                    <li class="sidebar-brand">
+                        <a href="#">
+                            Municipios
+                        </a>
+                    </li>
+                    <li class="list-group-item" ng-repeat="junta in juntas">
+                        <a href="#/sub/mun/{{junta.cod}}">{{junta.jurisdiccion}}</a>
+                    </li>
+                </ul>
+                
+        <div id="juntas" class="list-group" ng-init="listsJac()">
+         <div ng-repeat="junta in juntas"><a href="#/sub/mun/{{junta.cod}}" class="list-group-item">{{junta.jurisdiccion}}</a></div> 
+        </div>

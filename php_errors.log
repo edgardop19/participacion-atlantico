@@ -1,0 +1,520 @@
+[02-Oct-2016 16:45:42 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:45:42 UTC] PHP Stack trace:
+[02-Oct-2016 16:45:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:45:42 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:45:42 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:45:42 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:45:42 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:45:42 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:45:42 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:45:42 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:42 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:44 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:45:44 UTC] PHP Stack trace:
+[02-Oct-2016 16:45:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:45:44 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:45:44 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:45:44 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:45:44 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:45:44 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:45:44 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:45:44 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:44 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:44 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:45:44 UTC] PHP Stack trace:
+[02-Oct-2016 16:45:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:45:44 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:45:44 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:45:44 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:45:44 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:45:44 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:45:44 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:45:44 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:44 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:45 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:45:45 UTC] PHP Stack trace:
+[02-Oct-2016 16:45:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:45:45 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:45:45 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:45:45 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:45:45 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:45:45 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:45:45 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:45:45 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:45 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:47 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:45:47 UTC] PHP Stack trace:
+[02-Oct-2016 16:45:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:45:47 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:45:47 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:45:47 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:45:47 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:45:47 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:45:47 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:45:47 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:45:47 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:53:50 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:53:50 UTC] PHP Stack trace:
+[02-Oct-2016 16:53:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:53:50 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:53:50 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:53:50 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:53:50 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:53:50 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:53:50 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:53:50 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:53:50 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:54:14 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:54:14 UTC] PHP Stack trace:
+[02-Oct-2016 16:54:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:54:14 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:54:14 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:54:14 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:54:14 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:54:14 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:54:14 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:54:14 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:54:14 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:54:33 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 70
+[02-Oct-2016 16:54:33 UTC] PHP Stack trace:
+[02-Oct-2016 16:54:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[02-Oct-2016 16:54:33 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[02-Oct-2016 16:54:33 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[02-Oct-2016 16:54:33 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[02-Oct-2016 16:54:33 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[02-Oct-2016 16:54:33 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[02-Oct-2016 16:54:33 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[02-Oct-2016 16:54:33 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[02-Oct-2016 16:54:33 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:66-93}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 15:06:44 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/api/dbHandler.php on line 25
+[05-Oct-2016 15:06:44 UTC] PHP Stack trace:
+[05-Oct-2016 15:06:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 15:06:44 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 15:06:44 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 15:06:44 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 15:06:44 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 15:06:44 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 15:06:44 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 15:06:44 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 15:06:44 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:127-140}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 15:06:44 UTC] PHP  10. DbHandler->getOneRecord() /home/ubuntu/workspace/models/juntas.php:134
+[05-Oct-2016 15:07:20 UTC] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/ubuntu/workspace/api/dbHandler.php on line 25
+[05-Oct-2016 15:07:20 UTC] PHP Stack trace:
+[05-Oct-2016 15:07:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 15:07:20 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 15:07:20 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 15:07:20 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 15:07:20 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 15:07:20 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 15:07:20 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 15:07:20 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 15:07:20 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:127-140}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 15:07:20 UTC] PHP  10. DbHandler->getOneRecord() /home/ubuntu/workspace/models/juntas.php:134
+[05-Oct-2016 16:59:45 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 16:59:45 UTC] PHP Stack trace:
+[05-Oct-2016 16:59:45 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 16:59:45 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 16:59:45 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 16:59:45 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 16:59:45 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 16:59:45 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 16:59:45 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 16:59:45 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 16:59:45 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:02:18 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:02:18 UTC] PHP Stack trace:
+[05-Oct-2016 17:02:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:02:18 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:02:18 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:02:18 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:02:18 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:02:18 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:02:18 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:02:18 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:02:18 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:05:37 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:05:37 UTC] PHP Stack trace:
+[05-Oct-2016 17:05:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:05:37 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:05:37 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:05:37 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:05:37 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:05:37 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:05:37 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:05:37 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:05:37 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:06:03 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:06:03 UTC] PHP Stack trace:
+[05-Oct-2016 17:06:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:06:03 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:06:03 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:06:03 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:06:03 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:06:03 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:06:03 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:06:03 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:06:03 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:06:14 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:06:14 UTC] PHP Stack trace:
+[05-Oct-2016 17:06:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:06:14 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:06:14 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:06:14 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:06:14 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:06:14 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:06:14 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:06:14 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:06:14 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:09:28 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:09:28 UTC] PHP Stack trace:
+[05-Oct-2016 17:09:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:09:28 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:09:28 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:09:28 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:09:28 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:09:28 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:09:28 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:09:28 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:09:28 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:09:30 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:09:30 UTC] PHP Stack trace:
+[05-Oct-2016 17:09:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:09:30 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:09:30 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:09:30 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:09:30 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:09:30 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:09:30 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:09:30 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:09:30 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:09:32 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 132
+[05-Oct-2016 17:09:32 UTC] PHP Stack trace:
+[05-Oct-2016 17:09:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[05-Oct-2016 17:09:32 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[05-Oct-2016 17:09:32 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[05-Oct-2016 17:09:32 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[05-Oct-2016 17:09:32 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[05-Oct-2016 17:09:32 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[05-Oct-2016 17:09:32 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[05-Oct-2016 17:09:32 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[05-Oct-2016 17:09:32 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:128-135}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[07-Oct-2016 22:45:13 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/models/juntas.php on line 101
+[07-Oct-2016 22:45:13 UTC] PHP Stack trace:
+[07-Oct-2016 22:45:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[07-Oct-2016 22:47:17 UTC] PHP Parse error:  syntax error, unexpected '$e' (T_VARIABLE), expecting identifier (T_STRING) or namespace (T_NAMESPACE) or \\ (T_NS_SEPARATOR) in /home/ubuntu/workspace/models/juntas.php on line 96
+[07-Oct-2016 22:47:18 UTC] PHP Stack trace:
+[07-Oct-2016 22:47:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[07-Oct-2016 23:01:14 UTC] PHP Fatal error:  Call to undefined method Slim\Http\Request::getUploadedFiles() in /home/ubuntu/workspace/models/juntas.php on line 90
+[07-Oct-2016 23:01:14 UTC] PHP Stack trace:
+[07-Oct-2016 23:01:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[07-Oct-2016 23:01:14 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[07-Oct-2016 23:01:14 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[07-Oct-2016 23:01:14 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[07-Oct-2016 23:01:14 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[07-Oct-2016 23:01:14 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[07-Oct-2016 23:01:14 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[07-Oct-2016 23:01:14 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[07-Oct-2016 23:01:14 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:88-102}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[07-Oct-2016 23:08:08 UTC] PHP Fatal error:  Class 'Upload' not found in /home/ubuntu/workspace/models/juntas.php on line 97
+[07-Oct-2016 23:08:08 UTC] PHP Stack trace:
+[07-Oct-2016 23:08:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[07-Oct-2016 23:08:08 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[07-Oct-2016 23:08:08 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[07-Oct-2016 23:08:08 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[07-Oct-2016 23:08:08 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[07-Oct-2016 23:08:08 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[07-Oct-2016 23:08:08 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[07-Oct-2016 23:08:08 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[07-Oct-2016 23:08:08 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:88-103}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 04:17:48 UTC] PHP Fatal error:  Class 'Upload\Storage\FileSystem' not found in /home/ubuntu/workspace/models/juntas.php on line 103
+[12-Oct-2016 04:17:48 UTC] PHP Stack trace:
+[12-Oct-2016 04:17:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Oct-2016 04:17:48 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[12-Oct-2016 04:17:48 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Oct-2016 04:17:48 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Oct-2016 04:17:48 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Oct-2016 04:17:48 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Oct-2016 04:17:48 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Oct-2016 04:17:48 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 04:17:48 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:100-115}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 04:32:12 UTC] PHP Warning:  require(ROOT/vendor/autoload.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/api/index.php on line 11
+[12-Oct-2016 04:32:12 UTC] PHP Stack trace:
+[12-Oct-2016 04:32:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Oct-2016 04:32:12 UTC] PHP Fatal error:  require(): Failed opening required 'ROOT/vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/api/index.php on line 11
+[12-Oct-2016 04:32:12 UTC] PHP Stack trace:
+[12-Oct-2016 04:32:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Oct-2016 04:42:10 UTC] PHP Fatal error:  Call to undefined function vardump() in /home/ubuntu/workspace/models/juntas.php on line 114
+[12-Oct-2016 04:42:10 UTC] PHP Stack trace:
+[12-Oct-2016 04:42:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Oct-2016 04:42:10 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[12-Oct-2016 04:42:10 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Oct-2016 04:42:10 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Oct-2016 04:42:10 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Oct-2016 04:42:10 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Oct-2016 04:42:10 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Oct-2016 04:42:10 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 04:42:10 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:100-117}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 21:15:44 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 95
+[12-Oct-2016 21:15:44 UTC] PHP Stack trace:
+[12-Oct-2016 21:15:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Oct-2016 21:15:44 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[12-Oct-2016 21:15:44 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Oct-2016 21:15:44 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Oct-2016 21:15:44 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Oct-2016 21:15:44 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Oct-2016 21:15:44 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Oct-2016 21:15:44 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 21:15:44 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:90-105}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 21:24:12 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 95
+[12-Oct-2016 21:24:12 UTC] PHP Stack trace:
+[12-Oct-2016 21:24:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Oct-2016 21:24:12 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[12-Oct-2016 21:24:12 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Oct-2016 21:24:12 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Oct-2016 21:24:12 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Oct-2016 21:24:12 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Oct-2016 21:24:12 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Oct-2016 21:24:12 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Oct-2016 21:24:12 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:90-105}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[13-Oct-2016 01:36:33 UTC] PHP Fatal error:  Call to undefined function alert() in /home/ubuntu/workspace/models/juntas.php on line 102
+[13-Oct-2016 01:36:33 UTC] PHP Stack trace:
+[13-Oct-2016 01:36:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[13-Oct-2016 01:36:33 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[13-Oct-2016 01:36:33 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[13-Oct-2016 01:36:33 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[13-Oct-2016 01:36:33 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[13-Oct-2016 01:36:33 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[13-Oct-2016 01:36:33 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[13-Oct-2016 01:36:33 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[13-Oct-2016 01:36:33 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:90-120}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[13-Oct-2016 02:18:37 UTC] PHP Fatal error:  Call to undefined function sysdate() in /home/ubuntu/workspace/models/juntas.php on line 100
+[13-Oct-2016 02:18:37 UTC] PHP Stack trace:
+[13-Oct-2016 02:18:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[13-Oct-2016 02:18:37 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:24
+[13-Oct-2016 02:18:37 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[13-Oct-2016 02:18:37 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[13-Oct-2016 02:18:37 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[13-Oct-2016 02:18:37 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[13-Oct-2016 02:18:37 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[13-Oct-2016 02:18:37 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[13-Oct-2016 02:18:37 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:90-119}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:07 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(fpdf.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/models/juntas.php:60
+Stack trace:
+#0 /home/ubuntu/workspace/models/juntas.php(60): Slim\Slim::handleErrors(2, 'require(fpdf.ph...', '/home/ubuntu/wo...', 60, Array)
+#1 /home/ubuntu/workspace/models/juntas.php(60): DbHandler->{closure}()
+#2 [internal function]: {closure}()
+#3 /home/ubuntu/workspace/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1254): Slim\Middleware\PrettyExceptions->call()
+#9 /home/ubuntu/workspac in /home/ubuntu/workspace/models/juntas.php on line 60
+[24-Oct-2016 19:15:07 UTC] PHP Stack trace:
+[24-Oct-2016 19:15:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:15:07 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:15:07 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:15:07 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:15:07 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:15:07 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:15:07 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:15:07 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:07 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-79}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:07 UTC] PHP Fatal error:  {closure}(): Failed opening required 'fpdf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/models/juntas.php on line 60
+[24-Oct-2016 19:15:07 UTC] PHP Stack trace:
+[24-Oct-2016 19:15:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:15:07 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:15:07 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:15:07 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:15:07 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:15:07 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:15:07 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:15:07 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:07 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-79}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:08 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(fpdf.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/models/juntas.php:60
+Stack trace:
+#0 /home/ubuntu/workspace/models/juntas.php(60): Slim\Slim::handleErrors(2, 'require(fpdf.ph...', '/home/ubuntu/wo...', 60, Array)
+#1 /home/ubuntu/workspace/models/juntas.php(60): DbHandler->{closure}()
+#2 [internal function]: {closure}()
+#3 /home/ubuntu/workspace/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1254): Slim\Middleware\PrettyExceptions->call()
+#9 /home/ubuntu/workspac in /home/ubuntu/workspace/models/juntas.php on line 60
+[24-Oct-2016 19:15:08 UTC] PHP Stack trace:
+[24-Oct-2016 19:15:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:15:08 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:15:08 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:15:08 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:15:08 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:15:08 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:15:08 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:15:08 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:08 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-79}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:08 UTC] PHP Fatal error:  {closure}(): Failed opening required 'fpdf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/models/juntas.php on line 60
+[24-Oct-2016 19:15:08 UTC] PHP Stack trace:
+[24-Oct-2016 19:15:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:15:08 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:15:08 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:15:08 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:15:08 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:15:08 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:15:08 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:15:08 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:15:08 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-79}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:51 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(fpdf.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/models/juntas.php:72
+Stack trace:
+#0 /home/ubuntu/workspace/models/juntas.php(72): Slim\Slim::handleErrors(2, 'require(fpdf.ph...', '/home/ubuntu/wo...', 72, Array)
+#1 /home/ubuntu/workspace/models/juntas.php(72): DbHandler->{closure}()
+#2 [internal function]: {closure}()
+#3 /home/ubuntu/workspace/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1254): Slim\Middleware\PrettyExceptions->call()
+#9 /home/ubuntu/workspac in /home/ubuntu/workspace/models/juntas.php on line 72
+[24-Oct-2016 19:16:51 UTC] PHP Stack trace:
+[24-Oct-2016 19:16:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:16:51 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:16:51 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:16:51 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:16:51 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:16:51 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:16:51 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:16:51 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:51 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-81}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:51 UTC] PHP Fatal error:  {closure}(): Failed opening required 'fpdf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/models/juntas.php on line 60
+[24-Oct-2016 19:16:51 UTC] PHP Stack trace:
+[24-Oct-2016 19:16:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:16:51 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:16:51 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:16:51 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:16:51 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:16:51 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:16:51 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:16:51 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:51 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-81}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:52 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(fpdf.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/models/juntas.php:72
+Stack trace:
+#0 /home/ubuntu/workspace/models/juntas.php(72): Slim\Slim::handleErrors(2, 'require(fpdf.ph...', '/home/ubuntu/wo...', 72, Array)
+#1 /home/ubuntu/workspace/models/juntas.php(72): DbHandler->{closure}()
+#2 [internal function]: {closure}()
+#3 /home/ubuntu/workspace/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1254): Slim\Middleware\PrettyExceptions->call()
+#9 /home/ubuntu/workspac in /home/ubuntu/workspace/models/juntas.php on line 72
+[24-Oct-2016 19:16:52 UTC] PHP Stack trace:
+[24-Oct-2016 19:16:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:16:52 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:16:52 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:16:52 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:16:52 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:16:52 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:16:52 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:16:52 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:52 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-81}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:52 UTC] PHP Fatal error:  {closure}(): Failed opening required 'fpdf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/models/juntas.php on line 60
+[24-Oct-2016 19:16:52 UTC] PHP Stack trace:
+[24-Oct-2016 19:16:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:16:52 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:16:52 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:16:52 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:16:52 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:16:52 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:16:52 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:16:52 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:16:52 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:55-81}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:23:31 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(fpdf.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/models/juntas.php:54
+Stack trace:
+#0 /home/ubuntu/workspace/models/juntas.php(54): Slim\Slim::handleErrors(2, 'require(fpdf.ph...', '/home/ubuntu/wo...', 54, Array)
+#1 /home/ubuntu/workspace/models/juntas.php(54): DbHandler->{closure}()
+#2 [internal function]: {closure}()
+#3 /home/ubuntu/workspace/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1254): Slim\Middleware\PrettyExceptions->call()
+#9 /home/ubuntu/workspac in /home/ubuntu/workspace/models/juntas.php on line 54
+[24-Oct-2016 19:23:31 UTC] PHP Stack trace:
+[24-Oct-2016 19:23:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:23:31 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:23:31 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:23:31 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:23:31 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:23:31 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:23:31 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:23:31 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:23:31 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:39-62}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:23:31 UTC] PHP Fatal error:  {closure}(): Failed opening required 'fpdf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/models/juntas.php on line 54
+[24-Oct-2016 19:23:31 UTC] PHP Stack trace:
+[24-Oct-2016 19:23:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:23:31 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:23:31 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:23:31 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:23:31 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:23:31 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:23:31 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:23:31 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:23:31 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:39-62}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:25:35 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'require(fpdf.php): failed to open stream: No such file or directory' in /home/ubuntu/workspace/models/juntas.php:54
+Stack trace:
+#0 /home/ubuntu/workspace/models/juntas.php(54): Slim\Slim::handleErrors(2, 'require(fpdf.ph...', '/home/ubuntu/wo...', 54, Array)
+#1 /home/ubuntu/workspace/models/juntas.php(54): DbHandler->{closure}()
+#2 [internal function]: {closure}()
+#3 /home/ubuntu/workspace/api/libs/Slim/Route.php(436): call_user_func_array(Object(Closure), Array)
+#4 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1307): Slim\Route->dispatch()
+#5 /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php(85): Slim\Slim->call()
+#6 /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php(92): Slim\Middleware\Flash->call()
+#7 /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php(67): Slim\Middleware\MethodOverride->call()
+#8 /home/ubuntu/workspace/api/libs/Slim/Slim.php(1254): Slim\Middleware\PrettyExceptions->call()
+#9 /home/ubuntu/workspac in /home/ubuntu/workspace/models/juntas.php on line 54
+[24-Oct-2016 19:25:35 UTC] PHP Stack trace:
+[24-Oct-2016 19:25:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:25:35 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:25:35 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:25:35 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:25:35 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:25:35 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:25:35 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:25:35 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:25:35 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:39-62}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:25:35 UTC] PHP Fatal error:  {closure}(): Failed opening required 'fpdf.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/models/juntas.php on line 54
+[24-Oct-2016 19:25:35 UTC] PHP Stack trace:
+[24-Oct-2016 19:25:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[24-Oct-2016 19:25:35 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[24-Oct-2016 19:25:35 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[24-Oct-2016 19:25:35 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[24-Oct-2016 19:25:35 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[24-Oct-2016 19:25:35 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[24-Oct-2016 19:25:35 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[24-Oct-2016 19:25:35 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[24-Oct-2016 19:25:35 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:39-62}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[25-Oct-2016 19:58:18 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/models/juntas.php on line 224
+[25-Oct-2016 19:58:18 UTC] PHP Stack trace:
+[25-Oct-2016 19:58:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[25-Oct-2016 19:58:18 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[25-Oct-2016 19:58:18 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[25-Oct-2016 19:58:18 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[25-Oct-2016 19:58:18 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[25-Oct-2016 19:58:18 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[25-Oct-2016 19:58:18 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[25-Oct-2016 19:58:18 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[25-Oct-2016 19:58:18 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:214-231}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[25-Oct-2016 19:59:21 UTC] PHP Fatal error:  Using $this when not in object context in /home/ubuntu/workspace/models/juntas.php on line 224
+[25-Oct-2016 19:59:21 UTC] PHP Stack trace:
+[25-Oct-2016 19:59:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[25-Oct-2016 19:59:21 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[25-Oct-2016 19:59:21 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[25-Oct-2016 19:59:21 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[25-Oct-2016 19:59:21 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[25-Oct-2016 19:59:21 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[25-Oct-2016 19:59:21 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[25-Oct-2016 19:59:21 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[25-Oct-2016 19:59:21 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:214-231}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
