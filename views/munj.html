@@ -1,0 +1,14 @@
+      <label class="control-label requiredField" for="mun">
+       Municipio
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <select class="select form-control" name="mun" required="required"  ng-init="listsMun2()" onchange="location = this.value;">
+       <option value="Seleccione uno ...">
+        Seleccione uno ...
+       </option>
+	   <optgroup ng-repeat="munn in muns">
+        <option value="#/jac/{{munn.ID}}">{{munn.Nombre}}</option>
+		</optgroup>
+      </select>

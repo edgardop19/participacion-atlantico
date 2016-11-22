@@ -1,3 +1,18 @@
+<?php
+
+    //creamos la sesion
+    session_start();
+    //validamos si se ha hecho o no el inicio de sesion correctamente
+    //si no se ha hecho la sesion nos regresará a login.php
+    if(!isset($_SESSION['id'])) 
+    {
+        
+        header('Location: login.html'); 
+        
+        exit();
+    }
+
+?> 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -68,8 +83,7 @@
                         <li><a href="admin.html">Inicio</a></li>
                         <li><a href="#/docs">Gestión de documentos</a></li>
                         <li><a href="#/cont">Gestión de contenidos</a></li>
-                        <li><a href="#">JAC</a></li>
-                        <li><a href="#">Encuesta</a></li>
+                        <li><a href="#/jac">JAC</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->

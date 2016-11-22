@@ -1,3 +1,19 @@
+<?php
+
+    //creamos la sesion
+    session_start();
+    //validamos si se ha hecho o no el inicio de sesion correctamente
+    //si no se ha hecho la sesion nos regresará a login.php
+    if(!isset($_SESSION['id'])) 
+    {
+        
+        header('Location: login.html'); 
+        
+        exit();
+    }
+
+?> 
+
    <h3>Documentos almacenados</h3>
 <table class="table table-hover">
     <thead>
@@ -14,10 +30,9 @@
         <td>{{doc.PALABRAS_CLAVES}}</td>
         <td>{{doc.CODJUNTA}}</td>
         <td>{{doc.ID}}</td>
-        <td>
+       <!-- <td> -->
         <!--  <button class="btn btn-primary " name="Enviar" type="submit" onClick="location.href = '#/actd/{{doc.ID}}' "> -->
-       <a href="#/actd/{{doc.ID}}">Editar</a>
-        </td>
+      <!-- <a href="#/actd/{{doc.ID}}">Editar</a>  </td> -->
       </tr>
     </tbody>
   </table>
@@ -28,8 +43,7 @@
       <label class="control-label requiredField" for="docid">
        Documentos
       </label>
-       <input class="form-control" ng-model="obj.palabras" name="palabras" placeholder="Municipio" type="text"/>
-      <select class="select form-control" ng-model="obj.docid" name="docid" required="required" ng-controller="munController" ng-init="listsDoc()">
+      <select class="select form-control" ng-model="obj.docid" name="docid" required="required"  ng-init="listsDoc()">
        <option value="Seleccione uno ...">
         Seleccione uno ...
        </option>
@@ -65,20 +79,30 @@
       <input class="form-control" ng-model="page.palabras" name="palabras" placeholder="Palabras claves" type="text"/>
      </div>
     
-     <div class="form-group " >
+     <div class="form-group " ng-app data-ng-controller="munController" >
+      <label class="control-label requiredField" for="mun">
+       Municipio
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
+      <select class="select form-control" ng-model="page.mun" name="mun" required="required"  ng-init="listsMun2()" ng-change="listsJac3(page.mun)">
+       <option value="Seleccione uno ...">
+        Seleccione uno ...
+       </option>
+	   <optgroup ng-repeat="munn in muns">
+        <option value="{{munn.ID}}">{{munn.Nombre}}</option>
+		</optgroup>
+      </select>
+    
       <label class="control-label requiredField" for="juntaId">
        Junta de acción comunal
        <span class="asteriskField">
         *
        </span>
       </label>
-      <select class="select form-control" ng-model="page.juntaId" name="juntaId" required="required" ng-controller="munController" ng-init="listsJac2()">
-       <option value="Seleccione uno ...">
-        Seleccione uno ...
-       </option>
-	   <optgroup >
-        <option value="{{junta.cod}}">{{junta.jurisdiccion}}</option>
-		</optgroup>
+      <select class="select form-control" ng-model="page.juntaId" ng-options="junta.jurisdiccion for junta in juntas"  name="juntaId" required="required"  >
+         
       </select>
      </div>
      

@@ -18,11 +18,26 @@ $app->post('/juntas/list', function() use ($app) {
     }
 	echoResponse(200, $response);
 });
+$app->post('/juntas/listmun', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+   
+    $pages = $db->getAllRecords("select ID,Nombre from Municipios order by Nombre");
+    if ($pages != NULL) {
+		$pages_array = array();
+		foreach($pages as $page){
+			$pages_array['ID']= $page[0];	
+			$pages_array['Nombre']= $page[1];	
+			$response[] =$pages_array;
+		}		
+    }
+	echoResponse(200, $response);
+});
 $app->post('/juntas/show', function() use ($app) {
     $r = json_decode($app->request->getBody());
     $response = array();
     $db = new DbHandler();
-    $mun = $r->page->mun;
+    $mun = $r->page;
    
     $pages = $db->getAllRecords("select cod,idMunicipio,jurisdiccion from JAC where idMunicipio='$mun' order by jurisdiccion");
     if ($pages != NULL) {
@@ -31,6 +46,27 @@ $app->post('/juntas/show', function() use ($app) {
 			$pages_array['cod']= $page[0];	
 			$pages_array['idMunicipio']= $page[1];	
 			$pages_array['jurisdiccion']= $page[2];	
+			$response[] =$pages_array;
+		}		
+    }
+	echoResponse(200, $response);
+});
+$app->post('/juntas/showmun', function() use ($app) {
+    $r = json_decode($app->request->getBody());
+    $response = array();
+    $db = new DbHandler();
+    $mun = $r->page->mun;
+   
+    $pages = $db->getAllRecords("select cod,idMunicipio,jurisdiccion,resolucion,cc,nombre from JAC where idMunicipio='$mun' order by jurisdiccion");
+    if ($pages != NULL) {
+		$pages_array = array();
+		foreach($pages as $page){
+			$pages_array['cod']= $page[0];	
+			$pages_array['idMunicipio']= $page[1];	
+			$pages_array['jurisdiccion']= $page[2];	
+			$pages_array['resolucion']= $page[3];	
+			$pages_array['cc']= $page[4];	
+			$pages_array['nombre']= $page[5];	
 			$response[] =$pages_array;
 		}		
     }
@@ -55,8 +91,29 @@ $app->post('/juntas/update', function() use ($app) {
     }
 	echoResponse(200, $response);
 });
+$app->post('/juntas/updatej', function() use ($app) {
+    $r = json_decode($app->request->getBody());
+    $response = array();
+    $db = new DbHandler();
+    $id = $r->page->cod;
+   
+    $pages = $db->getAllRecords("select idMunicipio,jurisdiccion,resolucion,j.nombre,cc,m.Nombre from JAC j,Municipios m where cod='$id' AND idMunicipio=m.ID");
+    if ($pages != NULL) {
+		$pages_array = array();
+		foreach($pages as $page){
+				$pages_array['idMunicipio']= $page[0];	
+			$pages_array['jurisdiccion']= $page[1];	
+			$pages_array['resolucion']= $page[2];	
+			$pages_array['nombre']= $page[3];
+			$pages_array['cc']= $page[4];
+			$pages_array['mun']= $page[5];
+			$response[] =$pages_array;
+		}		
+    }
+	echoResponse(200, $response);
+});
 $app->post('/juntas/show2', function() use ($app) {
- /*   $r = json_decode($app->request->getBody());
+    $r = json_decode($app->request->getBody());
     $response = array();
     $db = new DbHandler();
     $pages = $db->getAllRecords("select cod,idMunicipio,jurisdiccion from JAC order by jurisdiccion");
@@ -69,41 +126,7 @@ $app->post('/juntas/show2', function() use ($app) {
 			$response[] =$pages_array;
 		}		
     }
-    echoResponse(200, $response); */
-    require('/home/ubuntu/workspace/PHPMailerAutoload.php');
-    require('/home/ubuntu/workspace/class.phpmailer.php');
-    require('/home/ubuntu/workspace/class.pop3.php');
-    require('/home/ubuntu/workspace/class.smtp.php');
-    
-
-$mail = new PHPMailer;
-
-//$mail->SMTPDebug = 3;                               // Enable verbose debug output
-
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'in-v3.mailjet.com;in-v3.mailjet.com';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '3004f957f3a3759d949ea1efcbd522da';                 // SMTP username
-$mail->Password = '8fc08b893d9fd80bed95d38d61058fcc';                           // SMTP password
-$mail->SMTPSecure = 'SSL';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
-
-$mail->From = 'epenarandaa@uninorte.edu.co';
-$mail->FromName = 'Default';
-    // Add a recipient
-$mail->addAddress('edgardop19@gmail.com');               // Name is optional
-
-
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
-
-if(!$mail->send()) {
-    echo 'Message could not be sent.';
-    echo 'Mailer Error: ' . $mail->ErrorInfo;
-} else {
-    echo 'Message has been sent';
-}
+    echoResponse(200, $response);
 }); 
 $app->post('/juntas/showDoc', function() use ($app) {
     $r = json_decode($app->request->getBody());
@@ -228,6 +251,17 @@ $app->post('/juntas/upload2', function() use ($app) {
     echoResponse(200, $response);
    
 });
+$app->post('/juntas/updatejac', function() use ($app) {
+    $response = array();
+    $db = new DbHandler();
+        
+   
+   
+    $page2Insert= array();
+		
+    echoResponse(200, $response);
+   
+});
 $app->post('/juntas/add', function() use ($app) {
     $response = array();
     $r = json_decode($app->request->getBody());
@@ -256,11 +290,39 @@ $app->post('/juntas/add', function() use ($app) {
         }            
    
 });
+$app->post('/juntas/create', function() use ($app) {
+    $response = array();
+    $r = json_decode($app->request->getBody());
+    $db = new DbHandler();
+        
+		$page2Insert= array();
+		$page2Insert['idMunicipio']=$r->page->mun;
+		$page2Insert['jurisdiccion']=$r->page->jurisdiccion;
+			$page2Insert['resolucion']=$r->page->resolucion;
+		$page2Insert['nombre']=$r->page->nombre;
+		$page2Insert['cc']=$r->page->cedula;
+	
+	
+        $column_names = array('idMunicipio','jurisdiccion', 'resolucion', 'nombre','cc');
+		
+        $tabble_name = "JAC";
+        $result = $db->insertIntoTable($page2Insert, $column_names, $tabble_name);
+        if ($result != NULL) {
+            $response["status"] = "success";
+            $response["message"] = "Page created successfully";            
+            echoResponse(200, $response);
+        } else {
+            $response["status"] = "error";
+            $response["message"] = "Failed to create page. Please try again";
+            echoResponse(201, $response);
+        }            
+   
+});
 $app->post('/juntas/delete', function() use ($app) {
     $response = array();
      $r = json_decode($app->request->getBody());
     $db = new DbHandler();
-    $id = $r->page->docid;
+    $id = $r->obj->docid;
     
     $pages = $db->getAllRecords("select RUTA from Documento where ID='$id'");
     if ($pages != NULL) {
@@ -270,6 +332,15 @@ $app->post('/juntas/delete', function() use ($app) {
     }
     $pages = $db->deleteOneRecord("delete from Documento where ID='$id'");
     unlink('/home/ubuntu/workspace'.$ruta);
+     $response["status"]="OK";
+});
+$app->post('/juntas/deleteJac', function() use ($app) {
+    $response = array();
+     $r = json_decode($app->request->getBody());
+    $db = new DbHandler();
+    $id = $r->obj->cod;
+    
+    $pages = $db->deleteOneRecord("delete from JAC where cod='$id'");
      $response["status"]="OK";
 });
 $app->post('/juntas/generate', function() use ($app) {

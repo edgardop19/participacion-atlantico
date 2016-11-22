@@ -1,31 +1,43 @@
 <?php
- require('/home/ubuntu/workspace/PHPMailerAutoload.php');
-    require('/home/ubuntu/workspace/class.phpmailer.php');
-    require('/home/ubuntu/workspace/class.pop3.php');
-    require('/home/ubuntu/workspace/class.smtp.php');
+ require('PHPMailerAutoload.php');
+    require('class.phpmailer.php');
+    require('class.pop3.php');
+    require('class.smtp.php');
     
+ $name = $_POST['nname'];
+$email = $_POST['email'];
+$cedula = $_POST['cedula'];
+$telefono = $_POST['telefono'];
+$tema = $_POST['subject'];
+$descripcion = $_POST['message'];
 
 $mail = new PHPMailer;
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 $mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'in-v3.mailjet.com;in-v3.mailjet.com';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = '3004f957f3a3759d949ea1efcbd522da';                 // SMTP username
-$mail->Password = '8fc08b893d9fd80bed95d38d61058fcc';                           // SMTP password
+$mail->Host = 'mihost.com';  // Specify main and backup SMTP servers
+$mail->SMTPAuth = false;                               // Enable SMTP authentication
+$mail->Username = '';                 // SMTP username
+$mail->Password = '';                           // SMTP password
 $mail->SMTPSecure = 'SSL';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 465;                                    // TCP port to connect to
+$mail->Port = 8001;                                     // TCP port to connect to
 
-$mail->From = 'epenarandaa@uninorte.edu.co';
-$mail->FromName = 'Default';
+$mail->From = 'noreply@atlantico.gov.co';
+$mail->FromName = $name;
     // Add a recipient
-$mail->addAddress('edgardop19@gmail.com');               // Name is optional
+$mail->addAddress('epenarandaa@uninorte.edu.co');                   // Name is optional
 
 
-$mail->Subject = 'Here is the subject';
-$mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+$mail->Subject = $tema;
+$mail->Body    ='<p>'.$descripcion.'</p>
+<p>Nombre: '.$name.'</p>
+<p>CC: '.$cedula.'</p>
+<p>Tel: '.$telefono.'</p>
+<p>Correo: '.$correo.'</p>
+<p>Este correo es enviado directamente de la Web de la subsecretaría</p>';
+
+$mail->AltBody = $descripcion."\n\n".$name."\n".$cedula."\n".$telefono."\n".$correo;
 
 if(!$mail->send()) {
     echo 'Message could not be sent.';

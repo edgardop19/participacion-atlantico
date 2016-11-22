@@ -1,4 +1,4 @@
-app.controller('munController', function ($scope, $rootScope, $routeParams, $location, $http) {
+app.controller('munController', function ($scope, $rootScope, $routeParams, $location, $http,$window) {
 	
 	$scope.listsMun = function () {
 		var reg = $routeParams.reg;
@@ -8,20 +8,42 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
 				$scope.municipios=results.data;			
 		});
 	};
+		$scope.listsMun2 = function () {
+		$http.post('api/juntas/listmun')
+		.then(function (results) {
+				$scope.muns=results.data;			
+		});
+	};
 	$scope.listsJac = function () {
 		var mun = $routeParams.mun;
 	    var page = {"mun":mun}; 
+		$http.post('api/juntas/showmun', {page,page})
+		.then(function (results) {
+				$scope.juntas=results.data;			
+		});
+	};
+	$scope.listsJac3 = function (page) {
 		$http.post('api/juntas/show', {page,page})
 		.then(function (results) {
 				$scope.juntas=results.data;			
 		});
 	};
-		$scope.listsup = function () {
+	$scope.listsup = function () {
 		var doc = $routeParams.doc;
 	    var page = {"doc":doc}; 
 		$http.post('api/juntas/update', {page,page})
 		.then(function (results) {
-				$scope.datos=results.data;			
+				$scope.dato=results.data[0];
+		});
+	};
+	
+		$scope.listsupj = function () {
+		var cod = $routeParams.cod;
+	    var page = {"cod":cod}; 
+		$http.post('api/juntas/updatej', {page,page})
+		.then(function (results) {
+				$scope.dato=results.data[0];
+			
 		});
 	};
 		$scope.listsJac2 = function () {
@@ -46,8 +68,8 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
 	};
 	 	$scope.respuesta=null;
     $scope.generate = {};
-	$scope.deleteDoc = function (page) {
-		$http.post('api/juntas/delete', {page,page})
+	$scope.deleteDoc = function (obj) {
+		$http.post('api/juntas/delete', {obj,obj})
 		 .success(function(){
           alert("Documento eliminado exitosamente !");	
         })
@@ -55,6 +77,17 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
           alert("No se ha podido eliminar el documento, intente de nuevo");	 
         });
 	};
+		$scope.respuesta=null;
+	$scope.deleteJac = function (obj) {
+		$http.post('api/juntas/deleteJac', {obj,obj})
+		 .success(function(){
+          alert("Junta eliminada exitosamente !");	
+        })
+        .error(function(){
+          alert("No se ha podido eliminar la junta, intente de nuevo");	 
+        });
+	};
+	
 	$scope.listsCont = function () {
 		$http.post('api/juntas/showConts')
 		.then(function (results) {
@@ -72,6 +105,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
          }
          else{
             alert("Certificado generado exitosamente !");
+            $window.open('https://participacion-atlantico-edgardop19.c9users.io/docs/filename.pdf', '_blank');
          }	
 	    	});
          
@@ -85,7 +119,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         
         fd.append('titulo', page.titulo);
         fd.append('palabras', page.palabras);
-        fd.append('juntaId', page.juntaId);
+        fd.append('juntaId', page.juntaId.cod);
         fd.append('archivo', page.archivo);
         $http.post('api/juntas/upload', fd, {
               transformRequest: angular.identity,
@@ -118,7 +152,18 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         	 alert("No se ha podido cargar el documento, intente de nuevo");
         });
     }
-    
+    $scope.updatej = function(page){
+    	
+     $http.post('api/juntas/updatejac', {page,page}
+        ).then(function (results) {
+            if (results.data.status == "success") {
+                $scope.respuesta="Los datos fueron agregados con éxito."
+            }else{
+			    $scope.respuesta="Ocurrio un error con su solicitud."
+			}
+        });
+        
+    };
     	$scope.respuesta=null;
     $scope.addRecurso = {};
     $scope.addDoc = function (page) {
@@ -126,6 +171,20 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         ).then(function (results) {
             if (results.data.status == "success") {
                 $scope.respuesta="Los datos fueron agregados con éxito."
+            }else{
+			    $scope.respuesta="Ocurrio un error con su solicitud."
+			}
+        });
+        
+    };
+    	$scope.respuesta=null;
+    $scope.addRecurso = {};
+    $scope.createj = function (page) {
+        $http.post('api/juntas/create', {page,page}
+        ).then(function (results) {
+            if (results.data.status == "success") {
+                $scope.respuesta="Los datos fueron agregados con éxito."
+                alert("Junta creada exitosamente");
             }else{
 			    $scope.respuesta="Ocurrio un error con su solicitud."
 			}

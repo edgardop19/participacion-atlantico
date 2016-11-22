@@ -27,8 +27,8 @@ form[editable-form] > div {margin: 10px 0;}
 }
 
 #sidebar-wrapper {
-   z-index: 1000;
-   position: fixed;
+   z-index: 2;
+   position: absolute;
    left: 250px;
    width: 0;
    height: 100%;
@@ -2618,13 +2618,25 @@ shortcodes page css
 #bottom .widget {
   margin-bottom: 0;
 }
-
 #footer {
   padding-top: 30px;
   padding-bottom: 30px;
   color: #fff;
   background: #2e2e2e;
 }
+#footer2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background: #2e2e2e;
+  clear: both;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+}
+
 
 #footer a {
   color: #fff;
@@ -2641,6 +2653,24 @@ shortcodes page css
 }
 
 #footer ul > li {
+  display: inline-block;
+  margin-left: 15px;
+}
+#footer2 a {
+  color: #fff;
+}
+
+#footer2 a:hover {
+  color: #c52d2f;
+}
+
+#footer2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer2 ul > li {
   display: inline-block;
   margin-left: 15px;
 }

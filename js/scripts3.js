@@ -21,15 +21,27 @@ app.config(['$routeProvider',
   function ($routeProvider) {
         $routeProvider
 		.when('/docs', {
-			templateUrl: 'views/newd.html',
+			templateUrl: 'views/newd.php',
+			controller: 'munController'
+		})
+		.when('/jac', {
+			templateUrl: 'views/munj.html',
+			controller: 'munController'
+		})
+		.when('/jac/:mun', {
+			templateUrl: 'views/newj.php',
 			controller: 'munController'
 		})
 		.when('/actd/:doc', {
 			templateUrl: 'views/actd.html',
 			controller: 'munController'
 		})
+			.when('/actj/:cod', {
+			templateUrl: 'views/actj.html',
+			controller: 'munController'
+		})
 			.when('/cont', {
-			templateUrl: 'views/newc.html',
+			templateUrl: 'views/newc.php',
 			controller: 'munController'
 		})
 		.when('/sub/:id', {

@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -105,10 +107,10 @@
                                 <a tabindex="-1" href="#">Elecciones de JAC</a>
                                 <ul id="list" class="dropdown-menu">
                                   <li><a tabindex="-1" href="#">Tarjetones</a></li>
-                                  <li><a href="#">Registro de postulación</a></li>
-                                  <li><a href="#">Directorio de dignatarios</a></li>
+                                  <li><a href="#">Postulaciónes</a></li>
+                                  <li><a href="#">Directorio</a></li>
                                   <li><a href="#">Registro de votantes</a></li>
-                                  <li><a href="#">Acta de elección de asamblea</a></li>
+                                  <li><a href="#">Actas de elección</a></li>
                                 </ul>
                               </li>
                             </ul>
@@ -119,8 +121,6 @@
                             <ul class="dropdown-menu">
                                 <li><a href="juntas.html">JAC</a></li>
                                 <li><a href="#/cert">Certificados</a></li>
-                                <li><a href="pricing.html">Pricing</a></li>
-                                <li><a href="shortcodes.html">Shortcodes</a></li>
                             </ul>
                         </li>
                         <li><a href="#/blog">Comunicaciones</a></li>
@@ -138,14 +138,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    &copy; 2016 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">Subsecretaría de participación y convivencia ciudadana</a>
                 </div>
                 <div class="col-sm-6">
                     <ul class="pull-right">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Faq</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Quienes Somos</a></li>
+                        <li><a href="#">Comunicaciones</a></li>
+                        <li><a href="#">Contáctenos</a></li>
+                        <li><a href="login.html">Administración</a></li>
                     </ul>
                 </div>
             </div>
@@ -161,11 +162,12 @@
     <script src="controllers/homeController.js"></script>
     <script src="controllers/munController.js"></script>
     <script src="controllers/contentController.js"></script>
- <!--  <script src="js/jquery.js"></script>
+     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/wow.min.js"></script> -->
+    <script src="js/wow.min.js"></script>
+    <script async src="js/wid.js" charset="utf-8"></script>
     </body>   
 </html>

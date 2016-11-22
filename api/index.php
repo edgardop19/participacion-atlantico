@@ -9,7 +9,6 @@ $app = new \Slim\Slim();
 
 require_once '../models/juntas.php';
 require_once '../models/contenido.php';
-//require_once '../validar.php';
 require_once '../vendor/autoload.php';
 
 function echoResponse($status_code, $response) {

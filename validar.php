@@ -14,7 +14,8 @@ $db = new DbHandler2();
 			if($page[2]==$pass)
 			{
 			session_start();
-            header("Location: admin.html");
+			 $_SESSION['id'] = $usuario; 
+            header("Location: admin.php");
 			}
 			else{
 			  header("Location: login.html");
