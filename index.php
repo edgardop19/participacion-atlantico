@@ -20,7 +20,7 @@
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/ico/faviconn.ico">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -82,7 +82,7 @@
                                   <li><a tabindex="-1" href="#">Etnias</a></li>
                                   <li><a href="#">Afros</a></li>
                                   <li><a href="#">LGBTI</a></li>
-                                  <li><a href="#">Victimas</a></li>
+                                  <li><a href="#/victimas">Victimas</a></li>
                                 </ul>
                               </li>
                               <li class="divider"></li>
@@ -107,10 +107,14 @@
                                 <a tabindex="-1" href="#">Elecciones de JAC</a>
                                 <ul id="list" class="dropdown-menu">
                                   <li><a tabindex="-1" href="#">Tarjetones</a></li>
-                                  <li><a href="#">Postulaciónes</a></li>
-                                  <li><a href="#">Directorio</a></li>
-                                  <li><a href="#">Registro de votantes</a></li>
-                                  <li><a href="#">Actas de elección</a></li>
+                                  <li><a href="/docp/8. REGISTRO DE POSTULACIONES.pdf">Postulaciónes</a></li>
+                                  <li><a href="/docp/9. POSTULACION LISTA.pdf">Postulación lista</a></li>
+                                  <li><a href="/docp/10. POSTULACION PLANCHA.pdf">Postulación plancha</a></li>
+                                  <li><a href="/docp/7. DIRECTORIO.pdf">Directorio</a></li>
+                                  <li><a href="/docp/6. REGISTRO DE VOTANTES.pdf">Registro de votantes</a></li>
+                                  <li><a href="/docp/5. RIRE.pdf">Reporte inicial RIRE</a></li>
+                                  <li><a href="/docp/2. ACTA PARCIAL DE ESCRUTINIOS.pdf">Actas de escritinios</a></li>
+                                  <li><a href="/docp/3. ACTA FINAL DE ELECCION DIRECTA.pdf">Acta final de elección</a></li>
                                 </ul>
                               </li>
                             </ul>
