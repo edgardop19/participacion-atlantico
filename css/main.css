@@ -781,6 +781,10 @@ input.search-form:hover {
   color: #fff;
 }
 
+.entidades{
+  color: #000;
+}
+
 .services-wrap {
   padding: 40px 30px;
   background: #fff;
@@ -1069,7 +1073,7 @@ a.accordion-toggle  i{
 }
 
 #partner {
-  background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;
+ /* background: url(../images/partners/partner_bg.png) 50% 50% no-repeat;*/
   background-size: cover;
 }
 
@@ -2736,4 +2740,88 @@ shortcodes page css
 }
 #juntas a:hover{
  background-color: #C52D2F;
+}
+
+/*
+* CAMBIOS SEC.TIC
+*/
+
+.header{
+  background: #F4F4F4;
+}
+
+.logoHeader{
+  max-width: 840px;
+  max-height: 120px;
+  width: 100% !important;
+  height: auto !important;
+  vertical-align: middle;
+  border: 0;
+  margin: 10px 0;
+}
+
+.navBarGob{
+
+  background: #333131;
+  margin-top: 30px;
+
+}
+
+.navBarGob a{
+
+  /*font-weight: bold;*/
+}
+
+.navbar{
+  margin-top: 0;
+  padding-top: 0;
+  min-height: 0 !important;
+
+}
+
+.navbar-nav{
+
+  margin-top: 0;
+
+}
+
+.navbar-nav>li{
+  margin-left: 35px;
+  padding: 1px 1px !important;
+}
+
+.center h2 {
+  padding-top: 25px;
+}
+
+.backgroundFooter{
+
+  background: blue !important;
+}
+
+.bottom{
+
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+}
+
+.infoFooter {
+
+  text-align: center !important;
+  
+}
+
+.infoFooter a{
+  color: #d60d28;
+}
+
+
+/*
+* ADMINISTRACIÓN
+*/
+
+.navBarAdmin{
+
+  padding-top: 40px;
 }

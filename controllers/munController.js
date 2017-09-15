@@ -78,6 +78,17 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         });
 	};
 		$scope.respuesta=null;
+		$scope.generate = {};
+	$scope.deleteCont = function (obj) {
+		$http.post('api/juntas/deleteCont', {obj,obj})
+		 .success(function(){
+          alert("Contenido eliminado exitosamente !");	
+        })
+        .error(function(){
+          alert("No se ha podido eliminar el contenido, intente de nuevo");	 
+        });
+	};
+		$scope.respuesta=null;
 	$scope.deleteJac = function (obj) {
 		$http.post('api/juntas/deleteJac', {obj,obj})
 		 .success(function(){
@@ -144,7 +155,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         $http.post('api/juntas/upload2', fd, {
               transformRequest: angular.identity,
               headers: {'Content-Type': undefined}
-        })
+        })	
         .success(function(){
         	 alert("Documento cargado exitosamente !");
         })
@@ -154,13 +165,23 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
     }
     $scope.updatej = function(page){
     	
-     $http.post('api/juntas/updatejac', {page,page}
-        ).then(function (results) {
-            if (results.data.status == "success") {
-                $scope.respuesta="Los datos fueron agregados con éxito."
-            }else{
-			    $scope.respuesta="Ocurrio un error con su solicitud."
-			}
+    	var fd = new FormData();
+        
+        fd.append('cod', page.cod);
+        fd.append('idMunicipio', page.idMunicipio);
+        fd.append('jurisdiccion', page.jurisdiccion);
+        fd.append('resolucion', page.resolucion);
+        fd.append('nombre', page.nombre);
+        fd.append('cc', page.cc);
+     $http.post('api/juntas/updatejac', fd, {
+              transformRequest: angular.identity,
+              headers: {'Content-Type': undefined}
+        })	
+        .success(function(){
+        	 alert("Junta actualizada exitosamente !");
+        })
+        .error(function(){
+        	 alert("No se ha podido actualizar, intente de nuevo");
         });
         
     };

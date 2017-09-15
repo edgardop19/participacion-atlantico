@@ -22,7 +22,7 @@ $app->get('/contenido/listGal', function() use ($app) {
     $response = array();
     $db = new DbHandler();
    
-    $pages = $db->getAllRecords("select TITULO,INFORMACION,RUTA,Ubicacion,Fecha_actualizacion,Estado from Contenido where Estado='1' AND Ubicacion='1'");
+    $pages = $db->getAllRecords("select TITULO,INFORMACION,RUTA,Ubicacion,Fecha_actualizacion,Estado from Contenido where Estado='1' AND Ubicacion='2'");
     if ($pages != NULL) {
 		$pages_array = array();
 		foreach($pages as $page){

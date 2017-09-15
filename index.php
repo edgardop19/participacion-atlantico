@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,7 +26,7 @@
 </head><!--/head-->
 
 <body ng-cloak="" class="homepage" ng-app="docs">
-
+  <!--
     <header id="header">
         <div class="top-bar">
             <div class="container">
@@ -53,10 +51,16 @@
                        </div>
                     </div>
                 </div>
-            </div><!--/.container-->
-        </div><!--/.top-bar-->
+            </div>
+        </div> -->
 
-        <nav class="navbar navbar-inverse" role="banner">
+      <!---  <nav class="navbar navbar-inverse header" role="banner"> -->
+        <header class="header">
+          <div class="container">
+            <a href="#/"><img class="logoHeader" src="images/logoheader.png" alt="logo"></a>  
+          </div>          
+        </header>
+          <nav class="navbar navbar-inverse navBarGob" role="banner">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -65,49 +69,30 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="/#/"><img src="images/logo.png" alt="logo"></a>
+                    <!-- <a class="navbar-brand" href="/#/"><img src="images/logo.png" alt="logo"></a> -->
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav navBarGob">
                         <li class="active"><a href="/#/">Inicio</a></li>
                         <li><a href="#/about-us">Quiénes Somos</a></li>
-                        <li >
-                              <a  class="dropdown-toggle" data-toggle="dropdown">Normatividad <i class="fa fa-angle-down"></i></a>
+                        <li><a  class="dropdown-toggle" data-toggle="dropdown">Normatividad <i class="fa fa-angle-down"></i></a>
                     		<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-                              <li><a href="#">Ruta de procesos</a></li>
                               <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Subdirecciones</a>
+                                <a tabindex="-1" >Subdirecciones</a>
                                 <ul class="dropdown-menu">
-                                  <li><a tabindex="-1" href="#">Etnias</a></li>
-                                  <li><a href="#">Afros</a></li>
-                                  <li><a href="#">LGBTI</a></li>
-                                  <li><a href="#/victimas">Victimas</a></li>
+                                  <li><a tabindex="-1" href="/docp/ddhh.pdf">Derechos Humanos</a></li>
+                                  <li><a href="#/victimas">Víctimas</a></li>
                                 </ul>
                               </li>
                               <li class="divider"></li>
-                              <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Asuntos Comunales: JAC</a>
-                                <ul class="dropdown-menu">
-                                  <li><a tabindex="-1" href="/docs/DECRETO 2350.pdf">Politicas públicas</a></li>
-                                    <li><a href="#">Resoluciones</a></li>
-                                    <li><a href="#">Estatutos JAC</a></li>
-                                  <li class="dropdown-submenu">
-                                    <a href="#">Manuales</a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="#">Actas</a></li>
-                                    	<li><a href="#">Formatos</a></li>
-                                      <li><a href="#">Informes</a></li>
-                                      <li><a href="#">Modelos</a></li>
-                                    </ul>
-                                  </li>
-                                </ul>
+                              <li >
+                                <a tabindex="-1" href="docs/DECRETO 2350.pdf">Decreto 2350 JAC</a>
                               </li>
                               <li class="dropdown-submenu">
-                                <a tabindex="-1" href="#">Elecciones de JAC</a>
+                                <a tabindex="-1" >Elecciones de JAC</a>
                                 <ul id="list" class="dropdown-menu">
-                                  <li><a tabindex="-1" href="#">Tarjetones</a></li>
-                                  <li><a href="/docp/8. REGISTRO DE POSTULACIONES.pdf">Postulaciónes</a></li>
+                                  <li><a tabindex="-1" href="/docp/8. REGISTRO DE POSTULACIONES.pdf">Postulaciónes</a></li>
                                   <li><a href="/docp/9. POSTULACION LISTA.pdf">Postulación lista</a></li>
                                   <li><a href="/docp/10. POSTULACION PLANCHA.pdf">Postulación plancha</a></li>
                                   <li><a href="/docp/7. DIRECTORIO.pdf">Directorio</a></li>
@@ -121,14 +106,14 @@
                         </li>
                       <!--  <li><a href="services.html">Servicios</a></li> -->
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contenidos <i class="fa fa-angle-down"></i></a>
+                            <a class="dropdown-toggle" data-toggle="dropdown">Contenidos <i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="juntas.html">JAC</a></li>
                                 <li><a href="#/cert">Certificados</a></li>
                             </ul>
                         </li>
                         <li><a href="#/blog">Comunicaciones</a></li>
-                        <li><a href="#/contact-us">PQRs</a></li>
+                        <li><a href="#/contact-us">Contácto</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -136,25 +121,30 @@
 
     </header><!--/header-->
 
-   <div data-ng-view="" id="ng-view" class=""></div> 
+   <div data-ng-view="" id="ng-view" class=""></div>
 
-    <footer id="footer" class="midnight-blue">
+  <!-- <footer id="footer" class="midnight-blue"> -->
+    <footer id="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    &copy; 2016 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">Subsecretaría de participación y convivencia ciudadana</a>
-                </div>
-                <div class="col-sm-6">
-                    <ul class="pull-right">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Quienes Somos</a></li>
-                        <li><a href="#">Comunicaciones</a></li>
-                        <li><a href="#">Contáctenos</a></li>
-                        <li><a href="login.html">Administración</a></li>
-                    </ul>
-                </div>
+          <div class="row">
+            <div class="col-sm-10 infoFooter">
+                <p class="infoFooter"> © 1998-2015 Gobernación del Atlántico - Calle 40 Cra. 45 y 46 - Barranquilla, Colombia </br>
+                  Teléfono (57+0*5)3307000 - Fax (57+0*5)3307444 - Línea Gratuita 018000425888 - Código DANE: 08-000 Código Postal 080003 </br>
+                  NIT Dpto del Atlántico: 890102006-1 - <a href="http://http://www.atlantico.gov.co/index.php/condiciones-de-uso">Condiciones de Uso de la Información</a> - <a href="http://www.atlantico.gov.co/index.php/presentacion-56985">Quejas y Reclamos</a></br>
+                  <a href="http://www.atlantico.gov.co/index.php/presentacion-56985">Horario de Atención</a> - <a href="http://www.atlantico.gov.co/index.php/directorio-general-50105">Contáctenos</a> - <a href="http://www.atlantico.gov.co/index.php/notificaciones-judiciales">Notificaciones Judiciales</a>
+                </p>
             </div>
-        </div>
+            <div class="col-sm-2">
+                <ul class="pull-right">
+                    <li><a href="#/">Inicio</a></li>
+                    <li><a href="#/about-us">Quienes Somos</a></li>
+                    <li><a href="#/blog">Comunicaciones</a></li>
+                    <li><a href="#/contact-us">Contáctenos</a></li>
+                    <li><a href="login.html">Administración</a></li>
+                </ul>
+            </div>
+          </div>
+        </div> 
     </footer><!--/#footer-->
 
  
@@ -175,3 +165,4 @@
     <script async src="js/wid.js" charset="utf-8"></script>
     </body>   
 </html>
+

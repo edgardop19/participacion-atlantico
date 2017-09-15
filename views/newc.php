@@ -32,18 +32,32 @@
         <td>{{cont.Ubicacion}}</td>
         <td>{{cont.Fecha_actualizacion}}</td>
          <td>{{cont.Estado}}</td>
-        <td> <button class="btn btn-primary " name="Enviar" type="submit">
-        Editar
-       </button>
-        <button class="btn btn-primary " name="Enviar" type="submit" ng-click="">
-        Borrar
-       </button>
-       </td>
+       
       </tr>
     </tbody>
   </table>
   
 <div class="container">
+
+
+<div class="form-group " >
+      <label class="control-label requiredField" for="id">
+       Contenidos
+      </label>
+      <select class="select form-control" ng-model="obj.id" name="id" required="required"  ng-init="listsCont()">
+       <option value="Seleccione uno ...">
+        Seleccione uno ...
+       </option>
+	   <optgroup ng-repeat="cont in conts">
+        <option value="{{cont.ID}}">{{cont.TITULO}}</option>
+		</optgroup>
+      </select>
+        <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteCont(obj)">
+        Eliminar
+       </button>
+     </div>
+
+
 
 <div class="row">
 <div class="col-lg-12">

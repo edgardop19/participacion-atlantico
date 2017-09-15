@@ -14,35 +14,35 @@
     <div class="row">
         <div class="col-xs-12 col-sm-2 text-center">
             <div class="entry-meta">
-                <span id="publish_date">07  NOV</span>
-                <span><i class="fa fa-user"></i> <a href="#">John Doe</a></span>
-                <span><i class="fa fa-comment"></i> <a href="blog-item.html#comments">2 Comments</a></span>
-                <span><i class="fa fa-heart"></i><a href="#">56 Likes</a></span>
+                <span id="publish_date">02  AGO</span>
+                <span><i class="fa fa-user"></i> <a href="#/blog">Edgardo Mendoza</a></span>
+                <span><i class="fa fa-comment"></i> <a href="#/blog">2 comentarios</a></span>
+                <span><i class="fa fa-heart"></i><a href="#/blog">56 Likes</a></span>
             </div>
         </div>
             
         <div class="col-xs-12 col-sm-10 blog-content">
-            <a href="#"><img class="img-responsive img-blog" src="{{cont.RUTA}}" width="100%" alt="" /></a>
-            <h2><a href="blog-item.html">{{cont.TITULO}}</a></h2>
+            <a href="#/blog"><img class="img-responsive img-blog" src="{{cont.RUTA}}" width="100%" alt="" /></a>
+            <h2><a href="#/blog">{{cont.TITULO}}</a></h2>
             <h3>{{cont.INFORMACION}}</h3>
-            <a class="btn btn-primary readmore" href="blog-item.html">Leer más <i class="fa fa-angle-right"></i></a>
+            <a class="btn btn-primary readmore" href="#/blog">Leer más <i class="fa fa-angle-right"></i></a>
         </div>
     </div>    
   </div><!--/.blog-item-->
 <ul class="pagination pagination-lg">
-    <li><a href="#"><i class="fa fa-long-arrow-left"></i>Previous Page</a></li>
-    <li class="active"><a href="#">1</a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#">Next Page<i class="fa fa-long-arrow-right"></i></a></li>
+    <li><a href="#"><i class="fa fa-long-arrow-left"></i>Página anterior</a></li>
+    <li class="active"><a href="#/blog">1</a></li>
+    <li><a href="#/blog">2</a></li>
+    <li><a href="#/blog">3</a></li>
+    <li><a href="#/blog">4</a></li>
+    <li><a href="#/blog">5</a></li>
+    <li><a href="#/blog">Siguiente página<i class="fa fa-long-arrow-right"></i></a></li>
 </ul><!--/.pagination-->
 </div>  
                 <aside class="col-md-4">
                     <div class="widget search">
                         <form role="form">
-                                <input type="text" class="form-control search_box" autocomplete="off" placeholder="Search Here">
+                                <input type="text" class="form-control search_box" autocomplete="off" placeholder="Buscar">
                         </form>
                     </div><!--/.search-->
     				
@@ -52,46 +52,50 @@
                             <div class="col-sm-12">
                                 <div class="single_comments">
                                     <img src="images/blog/avatar3.png" alt=""  />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                                    <p>Publicación de actividades de la semana</p>
                                     <div class="entry-meta small muted">
-                                        <span>By <a href="#">Alex</a></span <span>On <a href="#">Creative</a></span>
+                                        <span>Por: <a href="#/blog">Alex</a></span>
                                     </div>
+                                     <p>. </p>
+                                      
                                 </div>
                                 <div class="single_comments">
                                     <img src="images/blog/avatar3.png" alt=""  />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                                    <p>Capacitaciones comunales </p>
                                     <div class="entry-meta small muted">
-                                        <span>By <a href="#">Alex</a></span <span>On <a href="#">Creative</a></span>
+                                        <span>Por: <a href="#/blog">Alex</a></span>
                                     </div>
+                                     <p>. </p>
                                 </div>
                                 <div class="single_comments">
                                     <img src="images/blog/avatar3.png" alt=""  />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
+                                    <p>Desarrollo comunitario </p>
                                     <div class="entry-meta small muted">
-                                        <span>By <a href="#">Alex</a></span <span>On <a href="#">Creative</a></span>
+                                        <span>Por: <a href="#/blog">Alex</a></span>
                                     </div>
+                                    <p>. </p>
                                 </div>
                                 
                             </div>
                         </div>                     
                     </div><!--/.recent comments-->
                      
-
+<!--
                     <div class="widget categories">
                         <h3>Categorias</h3>
                         <div class="row">
                             <div class="col-sm-6">
                                 <ul class="blog_category">
-                                    <li><a href="#">Computers <span class="badge">04</span></a></li>
-                                    <li><a href="#">Smartphone <span class="badge">10</span></a></li>
-                                    <li><a href="#">Gedgets <span class="badge">06</span></a></li>
-                                    <li><a href="#">Technology <span class="badge">25</span></a></li>
+                                    <li><a href="#/blog">Juntas <span class="badge">04</span></a></li>
+                                    <li><a href="#/blog">Atlántico <span class="badge">10</span></a></li>
+                                    <li><a href="#/blog">Gobierno en linea </a></li>
+                                    <li><a href="#/blog">Min TIC <span class="badge">25</span></a></li>
                                 </ul>
                             </div>
                         </div>                     
                     </div><!--/.categories-->
     				
-    				<div class="widget archieve">
+    			<!--	<div class="widget archieve">
                         <h3>Archieve</h3>
                         <div class="row">
                             <div class="col-sm-12">
@@ -103,7 +107,7 @@
                                 </ul>
                             </div>
                         </div>                     
-                    </div><!--/.archieve-->
+                    </div>
     				
                     <div class="widget tags">
                         <h3>Tag Cloud</h3>
@@ -119,7 +123,7 @@
                             <li><a class="btn btn-xs btn-primary" href="#">Porche</a></li>
                             <li><a class="btn btn-xs btn-primary" href="#">Gadgets</a></li>
                         </ul>
-                    </div><!--/.tags-->
+                    </div>
     				
     				<div class="widget blog_gallery">
                         <h3>Galeria</h3>

@@ -97,7 +97,7 @@ $app->post('/juntas/updatej', function() use ($app) {
     $db = new DbHandler();
     $id = $r->page->cod;
    
-    $pages = $db->getAllRecords("select idMunicipio,jurisdiccion,resolucion,j.nombre,cc,m.Nombre from JAC j,Municipios m where cod='$id' AND idMunicipio=m.ID");
+    $pages = $db->getAllRecords("select idMunicipio,jurisdiccion,resolucion,j.nombre,cc,m.Nombre,cod from JAC j,Municipios m where cod='$id' AND idMunicipio=m.ID");
     if ($pages != NULL) {
 		$pages_array = array();
 		foreach($pages as $page){
@@ -107,6 +107,7 @@ $app->post('/juntas/updatej', function() use ($app) {
 			$pages_array['nombre']= $page[3];
 			$pages_array['cc']= $page[4];
 			$pages_array['mun']= $page[5];
+			$pages_array['cod']= $page[6];
 			$response[] =$pages_array;
 		}		
     }
@@ -252,13 +253,32 @@ $app->post('/juntas/upload2', function() use ($app) {
    
 });
 $app->post('/juntas/updatejac', function() use ($app) {
+     
     $response = array();
     $db = new DbHandler();
-        
+    
+    $id = $_POST['cod'];
+    
+    
+     
    
-   
-    $page2Insert= array();
+		   $pages2upload = array();
+		   $pages2upload['cod']= $_POST['cod'];
+		    $pages2upload['idMunicipio']= $_POST['idMunicipio'];	
+			$pages2upload['jurisdiccion']= $_POST['jurisdiccion'];	
+			$pages2upload['resolucion']= $_POST['resolucion'];	
+			$pages2upload['nombre']= $_POST['nombre'];
+			$pages2upload['cc']= $_POST['cc'];
+			
+	
+     $column_names = array('cod','idMunicipio', 'jurisdiccion','resolucion','nombre','cc');
 		
+        $tabble_name = "JAC";
+       $result = $db->insertIntoTable($page2upload, $column_names, $tabble_name);
+       
+      // $pages = $db->deleteOneRecord("delete from JAC where cod='$id'");
+       
+		$response["status"]="OK";
     echoResponse(200, $response);
    
 });
@@ -343,6 +363,22 @@ $app->post('/juntas/deleteJac', function() use ($app) {
     $pages = $db->deleteOneRecord("delete from JAC where cod='$id'");
      $response["status"]="OK";
 });
+$app->post('/juntas/deleteCont', function() use ($app) {
+    $response = array();
+     $r = json_decode($app->request->getBody());
+    $db = new DbHandler();
+    $id = $r->obj->id;
+    
+    $pages = $db->getAllRecords("select RUTA from Contenido where ID='$id'");
+    if ($pages != NULL) {
+		foreach($pages as $page){
+			$ruta= $page[0];	
+		}		
+    }
+    $pages = $db->deleteOneRecord("delete from Contenido where ID='$id'");
+    unlink('/home/ubuntu/workspace'.$ruta);
+     $response["status"]="OK";
+});
 $app->post('/juntas/generate', function() use ($app) {
    
     $response = array();
@@ -384,7 +420,7 @@ $app->post('/juntas/generate', function() use ($app) {
       $pdf->Ln(7);
       $pdf->Cell(40,10,utf8_decode("dignidad que ejercerá en el periodo 2016-2020."));
        $pdf->Ln(40);
-      $pdf->Cell(40,10,utf8_decode("Dado en Barranquilla a los 27 días del mes de Octubre de 2016"));
+      $pdf->Cell(40,10,utf8_decode("Dado en Barranquilla a los 11 días del mes de Septiembre de 2017"));
        $pdf->Ln(40);
       $pdf->Cell(40,10,'EDGARDO MENDOZA ORTEGA');
        $pdf->Ln(8);

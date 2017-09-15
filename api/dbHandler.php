@@ -52,7 +52,7 @@ class DbHandler {
             return NULL;
         }
     }
-    public function updateOneRecord($obj, $column_names, $table_name) {
+    public function updateOneRecord($obj, $column_names, $table_name,$cod) {
         
         $c = (array) $obj;
         $keys = array_keys($c);

@@ -9,6 +9,9 @@ app.config(['$routeProvider',
 		.when('/victimas', {
 			templateUrl: 'views/victimas.html'
 		})
+		.when('/ddhh', {
+			templateUrl: 'views/ddhh.html'
+		})
         .when('/blog', {
 			templateUrl: 'blog.html',
 			controller: 'contentController'

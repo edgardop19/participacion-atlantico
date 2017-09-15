@@ -6,35 +6,42 @@
                 <li data-target="#main-slider" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner" ng-init="listsCarr()">
-                <div ng-repeat="car in cars" class="item active" style="background-image: url({{car.RUTA}})">
+                
+                <div class="item active" style="background-image: url(imgs/grupo.jpg)">
+                    
+                </div>
+                
+                
+                
+                <div ng-repeat="car in cars" class="item" style="background-image: url({{car.RUTA}})">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
                                     <h1 class="animation animated-item-1">{{car.TITULO}}</h1>
                                     <h2 class="animation animated-item-2">{{car.INFORMACION}}</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Ver más</a>
+                                    <a class="btn-slide animation animated-item-3" href="#/">Ver más</a>
                                 </div>
                             </div>
 
-                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                           <!-- <div class="col-sm-6 hidden-xs animation animated-item-4">
                                 <div class="slider-img">
                                     <img src="images/slider/img3.png" class="img-responsive">
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
                     </div>
                 </div><!--/.item-->
                 
-                <div class="item" style="background-image: url(images/slider/bg2.jpg)">
+               <!-- <div class="item" style="background-image: url(images/slider/bg2.jpg)">
                     <div class="container">
                         <div class="row slide-margin">
                             <div class="col-sm-6">
                                 <div class="carousel-content">
                                     <h1 class="animation animated-item-1">Lorem ipsum dolor sit amet consectetur adipisicing elit</h1>
                                     <h2 class="animation animated-item-2">Accusantium doloremque laudantium totam rem aperiam, eaque ipsa...</h2>
-                                    <a class="btn-slide animation animated-item-3" href="#">Read More</a>
+                                    <a class="btn-slide animation animated-item-3" href="#/">Read More</a>
                                 </div>
                             </div>
 
@@ -46,7 +53,7 @@
 
                         </div>
                     </div>
-                </div><!--/.item-->
+                </div>
 
                 <div class="item" style="background-image: url(images/slider/bg3.jpg)">
                     <div class="container">
@@ -80,7 +87,7 @@
         <div class="container">
            <div class="center wow fadeInDown">
                 <h2>Herramientas</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                
             </div>
 
             <div class="row">
@@ -89,7 +96,7 @@
                         <div class="feature-wrap">
                             <i class="fa fa-bullhorn"></i>
                             <h2>Anúncios</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>Publicación de actividades recientes</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -97,7 +104,7 @@
                         <div class="feature-wrap">
                             <i class="fa fa-comments"></i>
                             <h2>Envíe sus comentarios</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>Consulte cualquier duda o inquietud en el módulo de contácto</h3>
                         </div>
                     </div><!--/.col-md-4-->
 
@@ -105,7 +112,7 @@
                         <div class="feature-wrap">
                             <i class="fa fa-cloud-download"></i>
                             <h2>Descarga de formatos y documentos</h2>
-                            <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                            <h3>Formatos para las juntas de acción comunal</h3>
                         </div>
                     </div><!--/.col-md-4-->
                 </div><!--/.services-->
@@ -117,7 +124,7 @@
         <div class="container">
             <div class="center wow fadeInDown">
                 <h2>Actividades recientes</h2>
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p class="lead">Galeria de actividades y capacitaciones</p>
             </div>
 
             <div class="row" ng-init="listsGal()">
@@ -133,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-
+<!--
                 <div class="col-xs-12 col-sm-4 col-md-3">
                     <div class="recent-work-wrap">
                         <img class="img-responsive" src="images/portfolio/recent/item3.png" alt="">
@@ -210,7 +217,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div><!--/.row-->
         </div><!--/.container-->
     </section><!--/#recent-works-->
@@ -231,7 +238,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Certificados</h3>
-                            <p>Descarga de certificados para dignatarios</p>
+                            <p><a href="#/cert">Descarga de certificados para dignatarios</a></p>
                         </div>
                     </div>
                 </div>
@@ -243,7 +250,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Resoluciones</h3>
-                            <p>Consulta resoluciones de JAC en linea</p>
+                            <p><a href="juntas.html">Consulta resoluciones de JAC en linea</a></p>
                         </div>
                     </div>
                 </div>
@@ -255,7 +262,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Comunicaciones</h3>
-                            <p>Eventos y actividades recientes</p>
+                            <p><a href="#/blog">Eventos y actividades recientes</a></p>
                         </div>
                     </div>
                 </div>
@@ -267,7 +274,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Peticiones</h3>
-                            <p>Registra tu comentario, petición, queja o reclamo</p>
+                            <p><a href="#/contact-us">Registra tu comentario, petición, queja o reclamo</a></p>
                         </div>
                     </div>
                 </div>
@@ -279,7 +286,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Normatividad</h3>
-                            <p>Modelos de politicas internas</p>
+                            <p><a href="docs/DECRETO 2350.pdf">Modelos de politicas internas</a></p>
                         </div>
                     </div>
                 </div>
@@ -291,7 +298,7 @@
                         </div>
                         <div class="media-body">
                             <h3 class="media-heading">Contáctenos</h3>
-                            <p>Nuestro direcrtorio de funcionarios</p>
+                            <p><a href="#/contact-us">Nuestro direcrtorio de funcionarios</a></p>
                         </div>
                     </div>
                 </div>
@@ -307,7 +314,14 @@
 
                 </div><!--/.col-sm-6-->
 
-                <div class="col-sm-6 wow fadeInDown">
+
+                 <div class="col-xs-12 col-sm-4 wow fadeInDown">
+                    <div class="testimonial">
+                      <a class="twitter-timeline" data-width="600" data-height="450" href="https://twitter.com/Gobatlantico">Tweets de Gobatlantico</a> 
+                      
+                    </div>
+                </div>
+               <!-- <div class="col-sm-6 wow fadeInDown">
                     <div class="accordion">
                         <h2>Preguntas frecuentes</h2>
                         <div class="panel-group" id="accordion1">
@@ -383,9 +397,9 @@
                               </div>
                             </div>
                           </div>
-                        </div><!--/#accordion1-->
+                        </div>
                     </div>
-                </div>
+                </div> -->
 
             </div><!--/.row-->
         </div><!--/.container-->
@@ -394,7 +408,7 @@
     <section id="content">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-8 wow fadeInDown">
+              <!--  <div class="col-xs-12 col-sm-8 wow fadeInDown">
                    <div class="tab-wrap">
                         <div class="media">
                             <div class="parrent pull-left">
@@ -445,18 +459,13 @@
                                      <div class="tab-pane fade" id="tab5">
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,</p>
                                      </div>
-                                </div> <!--/.tab-content-->
-                            </div> <!--/.media-body-->
-                        </div> <!--/.media-->
-                    </div><!--/.tab-wrap-->
-                </div><!--/.col-sm-6-->
-
-                <div class="col-xs-12 col-sm-4 wow fadeInDown">
-                    <div class="testimonial">
-                      <a class="twitter-timeline" data-width="450" data-height="500" href="https://twitter.com/Gobatlantico">Tweets de Gobatlantico</a> 
-                      
+                                </div> 
+                            </div> 
+                        </div> 
                     </div>
-                </div>
+                </div> -->
+
+               
 
             </div><!--/.row-->
         </div><!--/.container-->
@@ -464,18 +473,18 @@
 
     <section id="partner">
         <div class="container">
-            <div class="center wow fadeInDown">
-                <h2>Entidades</h2>
-                <p class="lead">Instituciones y programas de gobierno asociados</p>
+            <div >
+                <h2 class="entidades">Entidades</h2>
+                <p class="entidades"><b>Instituciones y programas de gobierno asociados</b></p>
             </div>
 
             <div class="partners">
                 <ul>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/partners/logo1.jpg"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/partners/logo.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/partners/logo2.jpg"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/partners/logo-mintic.png"></a></li>
-                    <li> <a href="#"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/logoEquidad.png"></a></li>
+                    <li> <a href="http://es.presidencia.gov.co/Paginas/presidencia.aspx" TARGET="_BLANK"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms" src="images/partners/logo1.jpg"></a></li>
+                    <li> <a href="http://www.mininterior.gov.co/" TARGET="_BLANK"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" src="images/partners/logo.png"></a></li>
+                    <li> <a href="http://estrategia.gobiernoenlinea.gov.co/623/w3-channel.html" TARGET="_BLANK"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms" src="images/partners/logo2.jpg"></a></li>
+                    <li> <a href="https://www.mintic.gov.co" TARGET="_BLANK"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1200ms" src="images/partners/logo-mintic.png"></a></li>
+                    <li> <a href="https://www.dnp.gov.co" TARGET="_BLANK"><img class="img-responsive wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="1500ms" src="images/partners/logoEquidad.png"></a></li>
                 </ul>
             </div>
         </div><!--/.container-->
@@ -491,7 +500,7 @@
                         </div>
                         <div class="media-body">
                             <h2>Preguntas o sugerencias?</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation +0123 456 70 80</p>
+                            <p ><a href="#/contact-us">Contáctenos</a></p>
                         </div>
                     </div>
                 </div>
@@ -506,11 +515,8 @@
                     <div class="widget">
                         <h3>Subsecretaria</h3>
                         <ul>
-                            <li><a href="#">Quienes Somos</a></li>
-                            <li><a href="#">Equipo de trabajo</a></li>
-                            <li><a href="#">Nuestra Misión</a></li>
-                            <li><a href="#">Organigrama</a></li>
-                            <li><a href="#">Secretario</a></li>
+                            <li><a href="#/about-us">Quienes Somos</a></li>
+                            <li><a href="#/about-us/">Nuestra Misión</a></li>
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
@@ -519,11 +525,11 @@
                     <div class="widget">
                         <h3>Contenido</h3>
                         <ul>
-                            <li><a href="#">Preguntas frecuentes</a></li>
-                            <li><a href="#">Comunicaciones</a></li>
-                            <li><a href="#">Certificados</a></li>
-                            <li><a href="#">Resoluciones</a></li>
-                            <li><a href="#">Juntas de acción comunal</a></li>
+                           
+                            <li><a href="#/blog">Comunicaciones</a></li>
+                            <li><a href="#/cert">Certificados</a></li>
+                            <li><a href="juntas.html">Resoluciones</a></li>
+                            <li><a href="juntas.html">Juntas de acción comunal</a></li>
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
@@ -532,27 +538,13 @@
                     <div class="widget">
                         <h3>Comunidades</h3>
                         <ul>
-                            <li><a href="#">Afro y Etnias</a></li>
-                            <li><a href="#">LGTBI</a></li>
-                            <li><a href="#">Victimas</a></li>
-                            <li><a href="#">Derechos Humanos</a></li>
-                            <li><a href="#">Servicio apoyo</a></li>
+                            <li><a href="#/victimas">Victimas</a></li>
+                            <li><a href="/docp/ddhh.pdf">Derechos Humanos</a></li>
                         </ul>
                     </div>
                 </div><!--/.col-md-3-->
 
-                <div class="col-md-3 col-sm-6">
-                    <div class="widget">
-                        <h3>Entidades asociadas</h3>
-                        <ul>
-                            <li><a href="#">Ministerio del Interior</a></li>
-                            <li><a href="#">Gobierno en Linea</a></li>
-                            <li><a href="#">Ministerio TIC</a></li>
-                            <li><a href="#">Gobernación del Atlántico</a></li>
-                            <li><a href="#">Todos por un nuevo país</a></li>
-                        </ul>
-                    </div>
-                </div><!--/.col-md-3-->
+               
             </div>
         </div>
     </section><!--/#bottom-->
