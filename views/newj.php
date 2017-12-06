@@ -15,16 +15,20 @@
 ?> 
 
    <h3>Juntas de acción comunal</h3>
-<table class="table table-hover">
+   
+   <button type="button" class="btn btn-primary spaced" data-toggle="modal" data-target="#ModalNuevaJAC">Nueva JAC</button>
+   
+<table datatable="ng" class="row-border hover table table-hover" id="juntastable" dt-options="dtOptions" >
     <thead>
       <tr>
         <th>Jurisdicción</th>
         <th>Resolución</th>
         <th>Cédula</th>
         <th>Presidente</th>
+        <th>Opciones</th>
       </tr>
     </thead>
-    <tbody ng-init="listsJac()">
+    <tbody>
       <tr ng-repeat="junta in juntas">
         <td>{{junta.jurisdiccion}}</td>
         <td>{{junta.resolucion}}</td>
@@ -33,13 +37,16 @@
         <td>
         <!--  <button class="btn btn-primary " name="Enviar" type="submit" onClick="location.href = '#/actd/{{doc.ID}}' "> -->
        <a href="#/actj/{{junta.cod}}">Editar</a>
+       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteJac(junta)">
+        Eliminar
+       </button>
         </td>
       </tr>
     </tbody>
   </table>
   
 <div class="container">
-
+<!--
 <div class="form-group " >
       <label class="control-label requiredField" for="docid">
        Juntas
@@ -56,6 +63,14 @@
         Eliminar
        </button>
      </div>
+-->
+
+<!-- Modal -->
+<div id="ModalNuevaJAC" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
 
 
 <div class="row">
@@ -64,6 +79,12 @@
                 <p  class=""></p>
     
     <form method="post" class="col-md-7 col-sm-12 col-xs-12">
+         <label class="control-label requiredField" for="titulo">
+       Municipio
+       <span class="asteriskField">
+        *
+       </span>
+      </label>
      <select class="select form-control" ng-model="page.mun" name="mun" required="required"  ng-init="listsMun2()" >
        <option value="Seleccione uno ...">
         Seleccione uno ...
@@ -114,4 +135,8 @@
 
 </div>
 </div>
+</div>
+</div>
+</div>
+
 </div><!-- /container -->

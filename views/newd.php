@@ -15,30 +15,35 @@
 ?> 
 
    <h3>Documentos almacenados</h3>
-<table class="table table-hover">
+   <button type="button" class="btn btn-primary spaced" data-toggle="modal" data-target="#ModalNuevoDoc">Nuevo Documento</button>
+   
+<table datatable="ng" class="row-border hover table table-hover" id="docstable" dt-options="dtOptions" >
     <thead>
       <tr>
         <th>Titulo</th>
         <th>Palabras claves</th>
         <th>Junta</th>
         <th>Ref</th>
+        <th>Opciones</th>
       </tr>
     </thead>
-    <tbody ng-init="listsDoc()">
+    <tbody>
       <tr ng-repeat="doc in docs">
         <td>{{doc.DESCRIPCION}}</td>
         <td>{{doc.PALABRAS_CLAVES}}</td>
         <td>{{doc.CODJUNTA}}</td>
         <td>{{doc.ID}}</td>
-       <!-- <td> -->
-        <!--  <button class="btn btn-primary " name="Enviar" type="submit" onClick="location.href = '#/actd/{{doc.ID}}' "> -->
-      <!-- <a href="#/actd/{{doc.ID}}">Editar</a>  </td> -->
+        <td> 
+          <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteDoc(doc)">
+          Eliminar
+         </button>
+        </td> 
       </tr>
     </tbody>
   </table>
   
 <div class="container">
-
+<!--
 <div class="form-group " >
       <label class="control-label requiredField" for="docid">
        Documentos
@@ -54,10 +59,15 @@
         <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteDoc(obj)">
         Eliminar
        </button>
-     </div>
+     </div>-->
 
+<!-- Modal -->
+<div id="ModalNuevoDoc" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
-<div class="row">
+    <!-- Modal content-->
+    <div class="modal-content">
+         <div class="row">
 <div class="col-lg-12">
                 <h2>Nuevo documento</h2>
                 <p  class=""></p>
@@ -124,7 +134,7 @@
      
      <div class="form-group">
       <div>
-       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="upload(page)">
+       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="upload(page)" data-dismiss="ModalNuevoDoc">
         Cargar
        </button>
       </div>
@@ -135,4 +145,9 @@
 
 </div>
 </div>
+    </div>
+
+  </div>
+</div>
+
 </div><!-- /container -->

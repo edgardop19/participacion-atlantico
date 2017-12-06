@@ -11,6 +11,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/datatables.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
@@ -74,7 +75,7 @@
 
                 <div class="collapse navbar-collapse navbar-right">
                     <ul class="nav navbar-nav navBarGob">
-                        <li class="active"><a href="/#/">Inicio</a></li>
+                        <li><a href="/#/">Inicio</a></li>
                         <li><a href="#/about-us">Quiénes Somos</a></li>
                         <li><a  class="dropdown-toggle" data-toggle="dropdown">Normatividad <i class="fa fa-angle-down"></i></a>
                     		<ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
@@ -149,14 +150,17 @@
 
  
 
+ <script src="js/jquery.js"></script>
    <script src="js/angular.min.js"></script> 
     <script src="js/angular-route.min.js"></script>
+     <script src="js/datatables.min.js"></script>
+    <script src="js/angular-datatables.min.js"></script>
   <!--  <script src="js/scripts.js"></script> -->
     <script src="js/scripts2.js"></script> 
-    <script src="controllers/homeController.js"></script>
+    <!--<script src="controllers/homeController.js"></script>-->
     <script src="controllers/munController.js"></script>
     <script src="controllers/contentController.js"></script>
-     <script src="js/jquery.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/jquery.isotope.min.js"></script>

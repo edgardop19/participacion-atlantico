@@ -15,7 +15,10 @@
 ?> 
 
  <h3>Contenidos almacenados</h3>
-<table class="table table-hover">
+ 
+ <button type="button" class="btn btn-primary spaced" data-toggle="modal" data-target="#ModalNuevoCont">Nuevo Contenido</button>
+ 
+<table datatable="ng" class="row-border hover table table-hover" id="contstable" dt-options="dtOptions" >
     <thead>
       <tr>
         <th>Titulo</th>
@@ -23,15 +26,22 @@
         <th>Ubicacion</th>
         <th>Fecha</th>
         <th>Estado</th>
+        <th>Opviones</th>
       </tr>
     </thead>
-    <tbody ng-init="listsCont()">
+    <tbody>
       <tr ng-repeat="cont in conts">
         <td>{{cont.TITULO}}</td>
         <td>{{cont.INFORMACION}}</td>
         <td>{{cont.Ubicacion}}</td>
         <td>{{cont.Fecha_actualizacion}}</td>
          <td>{{cont.Estado}}</td>
+         <td> 
+         <a href="#/actc/{{cont.ID}}">Editar</a>
+          <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteCont(cont)">
+          Eliminar
+         </button>
+        </td> 
        
       </tr>
     </tbody>
@@ -39,7 +49,7 @@
   
 <div class="container">
 
-
+<!--
 <div class="form-group " >
       <label class="control-label requiredField" for="id">
        Contenidos
@@ -56,8 +66,14 @@
         Eliminar
        </button>
      </div>
+-->
 
+<!-- Modal -->
+<div id="ModalNuevoCont" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
 
 <div class="row">
 <div class="col-lg-12">
@@ -134,13 +150,16 @@
      
      <div class="form-group">
       <div>
-       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="upload2(page)">
+       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="upload2(page)" data-dismiss="ModalNuevoCont">
         Cargar
        </button>
       </div>
      </div>
     </form>
 
+</div>
+</div>
+</div>
 </div>
 </div>
 </div><!-- /container -->

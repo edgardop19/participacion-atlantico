@@ -101,7 +101,7 @@ $app->post('/juntas/updatej', function() use ($app) {
     if ($pages != NULL) {
 		$pages_array = array();
 		foreach($pages as $page){
-				$pages_array['idMunicipio']= $page[0];	
+			$pages_array['idMunicipio']= $page[0];	
 			$pages_array['jurisdiccion']= $page[1];	
 			$pages_array['resolucion']= $page[2];	
 			$pages_array['nombre']= $page[3];
@@ -113,6 +113,29 @@ $app->post('/juntas/updatej', function() use ($app) {
     }
 	echoResponse(200, $response);
 });
+
+$app->post('/juntas/updatec', function() use ($app) {
+    $r = json_decode($app->request->getBody());
+    $response = array();
+    $db = new DbHandler();
+    $id = $r->page->ID;
+   
+    $pages = $db->getAllRecords("select ID,TITULO,INFORMACION,RUTA,UBICACION,ESTADO from Contenido where ID='$id'");
+    if ($pages != NULL) {
+		$pages_array = array();
+		foreach($pages as $page){
+			$pages_array['ID']= $page[0];	
+			$pages_array['TITULO']= $page[1];	
+			$pages_array['INFORMACION']= $page[2];	
+			$pages_array['RUTA']= $page[3];
+			$pages_array['UBICACION']= $page[4];
+			$pages_array['ESTADO']= $page[5];
+			$response[] =$pages_array;
+		}		
+    }
+	echoResponse(200, $response);
+});
+
 $app->post('/juntas/show2', function() use ($app) {
     $r = json_decode($app->request->getBody());
     $response = array();
@@ -257,11 +280,8 @@ $app->post('/juntas/updatejac', function() use ($app) {
     $response = array();
     $db = new DbHandler();
     
+    
     $id = $_POST['cod'];
-    
-    
-     
-   
 		   $pages2upload = array();
 		   $pages2upload['cod']= $_POST['cod'];
 		    $pages2upload['idMunicipio']= $_POST['idMunicipio'];	
@@ -269,12 +289,13 @@ $app->post('/juntas/updatejac', function() use ($app) {
 			$pages2upload['resolucion']= $_POST['resolucion'];	
 			$pages2upload['nombre']= $_POST['nombre'];
 			$pages2upload['cc']= $_POST['cc'];
-			
+			echo($pages2upload);
 	
      $column_names = array('cod','idMunicipio', 'jurisdiccion','resolucion','nombre','cc');
 		
         $tabble_name = "JAC";
-       $result = $db->insertIntoTable($page2upload, $column_names, $tabble_name);
+       $where="cod='$id'"; 
+       $result = $db->updateOneRecord($pages2upload, $column_names, $tabble_name,$where);
        
       // $pages = $db->deleteOneRecord("delete from JAC where cod='$id'");
        
@@ -282,6 +303,59 @@ $app->post('/juntas/updatejac', function() use ($app) {
     echoResponse(200, $response);
    
 });
+
+$app->post('/juntas/updatecont', function() use ($app) {
+     
+    $response = array();
+    $db = new DbHandler();
+    
+    $id = $_POST['ID'];
+    
+    $pages = $db->getAllRecords("select RUTA from Contenido where ID='$id'");
+    if ($pages != NULL) {
+		foreach($pages as $page){
+			$ruta= $page[0];	
+		}		
+    }
+		   $pages2upload = array();
+		   $pages2upload['ID']= $_POST['ID'];
+		    $pages2upload['TITULO']= $_POST['TITULO'];	
+			$pages2upload['INFORMACION']= $_POST['INFORMACION'];	
+			
+			     
+			    $storage = new \Upload\Storage\FileSystem('/home/ubuntu/workspace/imgs');
+			try{ 
+                $file = new \Upload\File('archivo', $storage);
+                unlink('/home/ubuntu/workspace'.$ruta);
+			    $pages2upload['RUTA']="/imgs/" . $file->getNameWithExtension();
+			}catch(\Exception $e){}
+		
+			$pages2upload['UBICACION']= $_POST['UBICACION'];
+			$pages2upload['ESTADO']= $_POST['ESTADO'];
+			echo($pages2upload);
+	
+     $column_names = array('ID','TITULO', 'INFORMACION','RUTA','UBICACION','ESTADO');
+		
+        $tabble_name = "Contenido";
+       $where="ID='$id'"; 
+       $result = $db->updateOneRecord($pages2upload, $column_names, $tabble_name,$where);
+       
+      // $pages = $db->deleteOneRecord("delete from JAC where cod='$id'");
+      
+        try { 
+            $file->upload();
+            $response["status"]="OK";
+        } catch (\Exception $e) { 
+            //$errors = $file->getErrors();
+            //$response["status"]=$errors;
+        }
+      
+           
+		$response["status"]="OK";
+    echoResponse(200, $response);
+   
+});
+
 $app->post('/juntas/add', function() use ($app) {
     $response = array();
     $r = json_decode($app->request->getBody());
@@ -342,7 +416,7 @@ $app->post('/juntas/delete', function() use ($app) {
     $response = array();
      $r = json_decode($app->request->getBody());
     $db = new DbHandler();
-    $id = $r->obj->docid;
+    $id = $r->obj->ID;
     
     $pages = $db->getAllRecords("select RUTA from Documento where ID='$id'");
     if ($pages != NULL) {
@@ -367,7 +441,7 @@ $app->post('/juntas/deleteCont', function() use ($app) {
     $response = array();
      $r = json_decode($app->request->getBody());
     $db = new DbHandler();
-    $id = $r->obj->id;
+    $id = $r->obj->ID;
     
     $pages = $db->getAllRecords("select RUTA from Contenido where ID='$id'");
     if ($pages != NULL) {
@@ -398,6 +472,8 @@ $app->post('/juntas/generate', function() use ($app) {
     
     if ($aux != NULL) {
    	require('/home/ubuntu/workspace/fpdf.php');
+   	$hoy=getdate();
+   	$meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
  $pdf = new FPDF();
     $pdf->AddPage();
     $pdf->Image('/home/ubuntu/workspace/images/logo.png',10,8,40);
@@ -420,8 +496,9 @@ $app->post('/juntas/generate', function() use ($app) {
       $pdf->Ln(7);
       $pdf->Cell(40,10,utf8_decode("dignidad que ejercerá en el periodo 2016-2020."));
        $pdf->Ln(40);
-      $pdf->Cell(40,10,utf8_decode("Dado en Barranquilla a los 11 días del mes de Septiembre de 2017"));
+      $pdf->Cell(40,10,utf8_decode("Dado en Barranquilla a los ".$hoy['mday']." días del mes de ".$meses[$hoy['mon']-1]." de ". $hoy['year']));
        $pdf->Ln(40);
+    //   $pdf->Image('/home/ubuntu/workspace/images/firma.png',10,8,40);
       $pdf->Cell(40,10,'EDGARDO MENDOZA ORTEGA');
        $pdf->Ln(8);
       $pdf->Cell(40,10,utf8_decode("SubSecretario de Participación Comunitaria y Convivencia. "));

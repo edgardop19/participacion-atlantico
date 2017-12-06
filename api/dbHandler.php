@@ -52,13 +52,28 @@ class DbHandler {
             return NULL;
         }
     }
-    public function updateOneRecord($obj, $column_names, $table_name,$cod) {
+    public function updateOneRecord($obj, $column_names, $table_name,$where) {
+         $cols = array();
+ 
+        /*foreach($obj as $key=>$val) {
+            $cols[] = "$key = '$val'";
+        }
+        $query = "UPDATE $table_name SET " . implode(', ', $cols) . " WHERE $where";
         
+        $r = $this->conn->query($query) or die($this->conn->error.__LINE__);
+
+        if ($r) {
+            $new_row_id = $this->conn->insert_id;
+            return $new_row_id;
+            } else {
+            return NULL;
+            }
+        */
         $c = (array) $obj;
         $keys = array_keys($c);
         $columns = '';
         $values = '';
-        foreach($column_names as $desired_key){ // Check the obj received. If blank insert blank into the array.
+        /*foreach($column_names as $desired_key){ // Check the obj received. If blank insert blank into the array.
            if(!in_array($desired_key, $keys)) {
                 $$desired_key = '';
             }else{
@@ -67,7 +82,14 @@ class DbHandler {
             $columns = $columns.$desired_key.',';
             $values = $values."'".$$desired_key."',";
         }
-        $query = "UPDATE ".$table_name."(".trim($columns,',').") VALUES(".trim($values,',').")";
+        */
+        foreach($obj as $key=>$val) {
+            $cols[] = "$key = '".$val."'";
+        }
+        
+         $query = "UPDATE ".$table_name." SET ".implode(', ', $cols)." WHERE ".$where;
+         
+        //$query = "UPDATE ".$table_name."(".trim($columns,',').") VALUES(".trim($values,',').")";
         $r = $this->conn->query($query) or die($this->conn->error.__LINE__);
 
         if ($r) {
@@ -80,6 +102,11 @@ class DbHandler {
     public function deleteOneRecord($query) {
         $r = $this->conn->query($query) or die($this->conn->error.__LINE__);
         return NULL;    
+    }
+    
+    
+    public function update($obj, $column_names, $table_name,$cod){
+        
     }
  
 }

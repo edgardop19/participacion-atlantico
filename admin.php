@@ -25,6 +25,7 @@
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/datatables.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
     <!--[if lt IE 9]>
@@ -60,7 +61,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" ><img src="images/logo.png" alt="logo"></a>
                 </div>
 
                 <div class="collapse navbar-collapse navbar-right">
@@ -69,6 +70,7 @@
                         <li><a href="#/docs">Gestión de documentos</a></li>
                         <li><a href="#/cont">Gestión de contenidos</a></li>
                         <li><a href="#/jac">JAC</a></li>
+                        <li><a href="logout2.php">Salir</a></li>
                     </ul>
                 </div>
             </div><!--/.container-->
@@ -76,11 +78,16 @@
 
     </header><!--/header-->
 
- <div data-ng-view="" id="ng-view" class=""></div> 
+ <div data-ng-view="" id="ng-view" class="" style="margin:20px;"></div> 
 
 </body>
+<script src="js/jquery.js"></script>
 <script src="js/angular.min.js"></script> 
     <script src="js/angular-route.min.js"></script>
+    
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/datatables.min.js"></script>
+    <script src="js/angular-datatables.min.js"></script>
     <script src="js/scripts3.js"></script> 
      <script src="controllers/munController.js"></script>
 </html>

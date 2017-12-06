@@ -1,4 +1,4 @@
-var app = angular.module('admin', ['ngRoute']);
+var app = angular.module('admin', ['ngRoute','datatables']);
 
 
  app.directive('fileModel', ['$parse', function ($parse) {
@@ -13,9 +13,21 @@ var app = angular.module('admin', ['ngRoute']);
                         modelSetter(scope, element[0].files[0]);
                      });
                   });
+                	
+                	scope.listsJac();
+                  scope.listsDoc();
+                  $('#docstable').DataTable();
+                  scope.listsCont();
+                  $('#contstable').DataTable();
+                  
+                  
+                   $('#juntastable').DataTable();
+                  
+                   
                }
             };
          }]);
+
 
 app.config(['$routeProvider',
   function ($routeProvider) {
@@ -40,6 +52,10 @@ app.config(['$routeProvider',
 			templateUrl: 'views/actj.html',
 			controller: 'munController'
 		})
+			.when('/actc/:ID', {
+			templateUrl: 'views/actc.html',
+			controller: 'munController'
+		})	
 			.when('/cont', {
 			templateUrl: 'views/newc.php',
 			controller: 'munController'
