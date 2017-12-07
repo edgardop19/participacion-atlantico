@@ -26,7 +26,7 @@
         <th>Ubicacion</th>
         <th>Fecha</th>
         <th>Estado</th>
-        <th>Opviones</th>
+        <th>Opciones</th>
       </tr>
     </thead>
     <tbody>
