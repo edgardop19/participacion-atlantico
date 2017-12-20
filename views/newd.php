@@ -23,15 +23,19 @@
         <th>Titulo</th>
         <th>Palabras claves</th>
         <th>Junta</th>
+        <th>Nombre</th>
+        <th>Jurisdiccion</th>
         <th>Ref</th>
         <th>Opciones</th>
       </tr>
     </thead>
     <tbody>
       <tr ng-repeat="doc in docs">
-        <td>{{doc.DESCRIPCION}}</td>
+        <td><a href="{{doc.RUTA}}">{{doc.DESCRIPCION}}</a></td>
         <td>{{doc.PALABRAS_CLAVES}}</td>
         <td>{{doc.CODJUNTA}}</td>
+        <td>{{doc.Nombre}}</td>
+        <td>{{doc.jurisdiccion}}</td>
         <td>{{doc.ID}}</td>
         <td> 
           <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteDoc(doc)">
@@ -134,7 +138,7 @@
      
      <div class="form-group">
       <div>
-       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="upload(page)" data-dismiss="ModalNuevoDoc">
+       <button class="btn btn-primary "  id="EnviarD" name="Enviar" type="submit" ng-click="upload(page)" data-dismiss="ModalNuevoDoc">
         Cargar
        </button>
       </div>

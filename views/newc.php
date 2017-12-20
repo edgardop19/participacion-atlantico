@@ -17,6 +17,8 @@
  <h3>Contenidos almacenados</h3>
  
  <button type="button" class="btn btn-primary spaced" data-toggle="modal" data-target="#ModalNuevoCont">Nuevo Contenido</button>
+ <p><b>Ubicacion: 1) Comunicaciones  2) Galeria  3) Scroll principal</b></p>
+ <p><b>  Estado: 1) Activo  2) Inactivo</b></p>
  
 <table datatable="ng" class="row-border hover table table-hover" id="contstable" dt-options="dtOptions" >
     <thead>
@@ -150,7 +152,7 @@
      
      <div class="form-group">
       <div>
-       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="upload2(page)" data-dismiss="ModalNuevoCont">
+       <button class="btn btn-primary" id="EnviarC" name="Enviar" type="submit" ng-click="upload2(page)" data-dismiss="ModalNuevoCont">
         Cargar
        </button>
       </div>

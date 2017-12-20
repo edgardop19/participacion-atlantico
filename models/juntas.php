@@ -33,6 +33,25 @@ $app->post('/juntas/listmun', function() use ($app) {
     }
 	echoResponse(200, $response);
 });
+
+$app->post('/juntas/getmun', function() use ($app) {
+    $r = json_decode($app->request->getBody());
+    $response = array();
+    $db = new DbHandler();
+    
+    $id = $r->page->ID;
+    $pages = $db->getAllRecords("select ID,Nombre from Municipios where ID ='$id'");
+    if ($pages != NULL) {
+		$pages_array = array();
+		foreach($pages as $page){
+			$pages_array['ID']= $page[0];	
+			$pages_array['Nombre']= $page[1];	
+			$response[] =$pages_array;
+		}		
+    }
+	echoResponse(200, $response);
+});
+
 $app->post('/juntas/show', function() use ($app) {
     $r = json_decode($app->request->getBody());
     $response = array();
@@ -157,7 +176,7 @@ $app->post('/juntas/showDoc', function() use ($app) {
     $response = array();
     $db = new DbHandler();
    
-    $pages = $db->getAllRecords("select DESCRIPCION,PALABRAS_CLAVES,CODJUNTA,ID from Documento order by CODJUNTA");
+    $pages = $db->getAllRecords("SELECT DESCRIPCION, PALABRAS_CLAVES, CODJUNTA, d.ID, RUTA, m.Nombre, jurisdiccion FROM Documento d, JAC, Municipios m WHERE CODJUNTA = cod AND idMunicipio = m.ID ORDER BY CODJUNTA");
     if ($pages != NULL) {
 		$pages_array = array();
 		foreach($pages as $page){
@@ -165,6 +184,9 @@ $app->post('/juntas/showDoc', function() use ($app) {
 			$pages_array['PALABRAS_CLAVES']= $page[1];	
 			$pages_array['CODJUNTA']= $page[2];
 			$pages_array['ID']= $page[3];
+			$pages_array['RUTA']= $page[4];
+			$pages_array['Nombre']= $page[5];
+			$pages_array['jurisdiccion']= $page[6];
 			$response[] =$pages_array;
 		}		
     }
@@ -216,14 +238,14 @@ $app->post('/juntas/Docs', function() use ($app) {
 $app->post('/juntas/upload', function() use ($app) {
     $response = array();
     $db = new DbHandler();
-        
-   $storage = new \Upload\Storage\FileSystem('/home/ubuntu/workspace/docs');
+        $hoy=getdate(); 
+   $storage = new \Upload\Storage\FileSystem('../docs');
    $file = new \Upload\File('archivo', $storage);
    
     $page2Insert= array();
 		$page2Insert['TIPO']="1";
 		$page2Insert['DESCRIPCION']=$_POST['titulo'];
-			$page2Insert['FECHA']="sysdate()";
+			$page2Insert['FECHA']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
 		$page2Insert['PALABRAS_CLAVES']=$_POST['palabras'];
 		$page2Insert['CODJUNTA']=$_POST['juntaId'];
 		$page2Insert['RUTA']="/docs/" . $file->getNameWithExtension();
@@ -247,8 +269,8 @@ $app->post('/juntas/upload', function() use ($app) {
 $app->post('/juntas/upload2', function() use ($app) {
     $response = array();
     $db = new DbHandler();
-        
-   $storage = new \Upload\Storage\FileSystem('/home/ubuntu/workspace/imgs');
+        $hoy=getdate();
+   $storage = new \Upload\Storage\FileSystem('../imgs');
    $file = new \Upload\File('archivo', $storage);
    
     $page2Insert= array();
@@ -256,8 +278,8 @@ $app->post('/juntas/upload2', function() use ($app) {
 		$page2Insert['INFORMACION']=$_POST['descripcion'];
 		$page2Insert['RUTA']="/imgs/" . $file->getNameWithExtension();
 		$page2Insert['Ubicacion']=$_POST['ubicacion'];
-			$page2Insert['Fecha_creacion']="sysdate()";
-			$page2Insert['Fecha_actualizacion']="sysdate()";
+			$page2Insert['Fecha_creacion']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
+			$page2Insert['Fecha_actualizacion']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
 		$page2Insert['Estado']=$_POST['estado'];
 		
 
@@ -308,7 +330,7 @@ $app->post('/juntas/updatecont', function() use ($app) {
      
     $response = array();
     $db = new DbHandler();
-    
+     $hoy=getdate();
     $id = $_POST['ID'];
     
     $pages = $db->getAllRecords("select RUTA from Contenido where ID='$id'");
@@ -321,12 +343,12 @@ $app->post('/juntas/updatecont', function() use ($app) {
 		   $pages2upload['ID']= $_POST['ID'];
 		    $pages2upload['TITULO']= $_POST['TITULO'];	
 			$pages2upload['INFORMACION']= $_POST['INFORMACION'];	
-			
+			$pages2upload['Fecha_actualizacion']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
 			     
-			    $storage = new \Upload\Storage\FileSystem('/home/ubuntu/workspace/imgs');
+			    $storage = new \Upload\Storage\FileSystem('../imgs');
 			try{ 
                 $file = new \Upload\File('archivo', $storage);
-                unlink('/home/ubuntu/workspace'.$ruta);
+                unlink('../'.$ruta);
 			    $pages2upload['RUTA']="/imgs/" . $file->getNameWithExtension();
 			}catch(\Exception $e){}
 		
@@ -358,13 +380,14 @@ $app->post('/juntas/updatecont', function() use ($app) {
 
 $app->post('/juntas/add', function() use ($app) {
     $response = array();
+     $hoy=getdate();
     $r = json_decode($app->request->getBody());
     $db = new DbHandler();
         
 		$page2Insert= array();
 		$page2Insert['TIPO']="1";
 		$page2Insert['DESCRIPCION']=$r->page->titulo;
-			$page2Insert['FECHA']="sysdate()";
+			$page2Insert['FECHA']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
 		$page2Insert['PALABRAS_CLAVES']=$r->page->palabras;
 		$page2Insert['CODJUNTA']=$r->page->juntaId;
 	
@@ -425,7 +448,7 @@ $app->post('/juntas/delete', function() use ($app) {
 		}		
     }
     $pages = $db->deleteOneRecord("delete from Documento where ID='$id'");
-    unlink('/home/ubuntu/workspace'.$ruta);
+    unlink('../'.$ruta);
      $response["status"]="OK";
 });
 $app->post('/juntas/deleteJac', function() use ($app) {
@@ -450,7 +473,7 @@ $app->post('/juntas/deleteCont', function() use ($app) {
 		}		
     }
     $pages = $db->deleteOneRecord("delete from Contenido where ID='$id'");
-    unlink('/home/ubuntu/workspace'.$ruta);
+    unlink('../'.$ruta);
      $response["status"]="OK";
 });
 $app->post('/juntas/generate', function() use ($app) {
@@ -471,12 +494,12 @@ $app->post('/juntas/generate', function() use ($app) {
     }
     
     if ($aux != NULL) {
-   	require('/home/ubuntu/workspace/fpdf.php');
+   	require('../fpdf.php');
    	$hoy=getdate();
    	$meses = array("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
  $pdf = new FPDF();
     $pdf->AddPage();
-    $pdf->Image('/home/ubuntu/workspace/images/logo.png',10,8,40);
+    $pdf->Image('../images/logo.png',10,8,40);
     $pdf->SetFont('Arial','',12);
     $pdf->Ln(40);
     $pdf->Cell(15);
@@ -502,7 +525,7 @@ $app->post('/juntas/generate', function() use ($app) {
       $pdf->Cell(40,10,'EDGARDO MENDOZA ORTEGA');
        $pdf->Ln(8);
       $pdf->Cell(40,10,utf8_decode("SubSecretario de Participación Comunitaria y Convivencia. "));
-    $pdf->Output(F,'/home/ubuntu/workspace/docs/filename.pdf'); 
+    $pdf->Output(F,'../docs/filename.pdf'); 
     $response["status"]="OK";
      echoResponse(200, $response);
     }

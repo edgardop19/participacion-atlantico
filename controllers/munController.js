@@ -1,4 +1,4 @@
-app.controller('munController', function ($scope, $rootScope, $routeParams, $location, $http,$window,$sce,DTOptionsBuilder) {
+app.controller('munController', function ($scope, $rootScope, $routeParams, $location, $http,$window,$sce,DTOptionsBuilder,$route) {
     
     $scope.docs=[{}];
 	
@@ -86,6 +86,8 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
 		$http.post('api/juntas/delete', {obj,obj})
 		 .success(function(){
           alert("Documento eliminado exitosamente !");	
+          	window.location.replace("admin.php#/docs");
+          		$route.reload();
         })
         .error(function(){
           alert("No se ha podido eliminar el documento, intente de nuevo");	 
@@ -96,7 +98,8 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
 	$scope.deleteCont = function (obj) {
 		$http.post('api/juntas/deleteCont', {obj,obj})
 		 .success(function(){
-          alert("Contenido eliminado exitosamente !");	
+          alert("Contenido eliminado exitosamente !");
+          $route.reload();
         })
         .error(function(){
           alert("No se ha podido eliminar el contenido, intente de nuevo");	 
@@ -107,6 +110,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
 		$http.post('api/juntas/deleteJac', {obj,obj})
 		 .success(function(){
           alert("Junta eliminada exitosamente !");	
+         $route.reload();
         })
         .error(function(){
           alert("No se ha podido eliminar la junta, intente de nuevo");	 
@@ -130,14 +134,14 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
          }
          else{
             alert("Certificado generado exitosamente !");
-           var pdfURL = "/docs/filename.pdf";
+           var pdfURL = "../docs/filename.pdf";
             $http.get(pdfURL, { responseType: 'arraybuffer' })
         	.then(function success(response) {
         		 var file = new Blob([response.data], {
                 type: 'application/pdf' }), url = $window.URL || $window.webkitURL;
             $scope.fileUrl = $sce.trustAsResourceUrl(url.createObjectURL(file));
         	});
-            $window.open('https://participacion-atlantico-edgardop19.c9users.io/docs/filename.pdf', '_blank');
+            $window.open('https://participacion-atlantico-edgardop19.c9users.io/jac/docs/filename.pdf', '_blank');
          }	
 	    	});
          
@@ -159,7 +163,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         })
         .success(function(){
           alert("Documento cargado exitosamente !");
-          this.$hide();
+          $route.reload();
         })
         .error(function(){
           alert("No se ha podido cargar el documento, intente de nuevo");	 
@@ -179,7 +183,11 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
               headers: {'Content-Type': undefined}
         })	
         .success(function(){
-        	 alert("Contenido cargado exitosamente !");
+             alert("Contenido cargado exitosamente !");
+            
+        	$route.reload();
+        	
+        	
         })
         .error(function(){
         	 alert("No se ha podido cargar el documento, intente de nuevo");
@@ -201,6 +209,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
         })	
         .success(function(){
         	alert("No se ha podido actualizar, intente de nuevo");
+        	
         	window.location.replace("admin.php#/jac/"+page.idMunicipio);
         	 
         })
@@ -229,14 +238,17 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
               headers: {'Content-Type': undefined}
         })	
         .success(function(){
-        	alert("No se ha podido actualizar, intente de nuevo");
-        	window.location.replace("admin.php#/cont/");
+        	 alert("Contenido actualizado exitosamente !");
+        		window.location.replace("admin.php#/cont");
+        	
+        
         	 
         })
         .error(function(){
-        	 alert("Contenido actualizada exitosamente !");
-        	 
-        	 window.location.replace("admin.php#/cont/");
+        	 alert("Contenido actualizado exitosamente !");
+        	 	window.location.replace("admin.php#/cont");
+        	
+        	$route.reload();
         });
         
     };
@@ -262,6 +274,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
             if (results.data.status == "success") {
                 $scope.respuesta="Los datos fueron agregados con éxito."
                 alert("Junta creada exitosamente");
+               $route.reload();
             }else{
 			    $scope.respuesta="Ocurrio un error con su solicitud."
 			}
@@ -272,7 +285,15 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
     
     $scope.listsJac();
    
-    
+    $scope.getMunicipio=function(){
+        	var id = $routeParams.mun;
+	    var page = {"ID":id}; 
+		$http.post('api/juntas/getmun', {page,page})
+		.then(function (results) {
+				$scope.municipioSel=results.data;			
+		});
+        
+    }
      var language = {
 		    "sEmptyTable":     "La tabla no tiene datos",
 		    "sLoadingRecords": "Cargando...",

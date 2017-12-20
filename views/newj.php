@@ -14,7 +14,9 @@
 
 ?> 
 
+  <h2  ng-init="getMunicipio()">{{municipioSel[0].Nombre}}</h2>
    <h3>Juntas de acción comunal</h3>
+   
    
    <button type="button" class="btn btn-primary spaced" data-toggle="modal" data-target="#ModalNuevaJAC">Nueva JAC</button>
    
@@ -124,7 +126,7 @@
  
      <div class="form-group">
       <div>
-       <button class="btn btn-primary " name="Enviar" type="submit" ng-click="createj(page)">
+          <button class="btn btn-primary "  id="CrearJAC" name="Enviar" type="submit" ng-click="createj(page)" data-dismiss="ModalNuevaJAC">
         Crear
        </button>
       </div>

@@ -734,3 +734,212 @@ Stack trace:
 [06-Dec-2017 14:57:54 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
 [06-Dec-2017 14:57:54 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
 [06-Dec-2017 14:57:54 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:307-357}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Dec-2017 19:46:25 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 346
+[12-Dec-2017 19:46:26 UTC] PHP Stack trace:
+[12-Dec-2017 19:46:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Dec-2017 19:46:26 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[12-Dec-2017 19:46:26 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Dec-2017 19:46:26 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Dec-2017 19:46:26 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Dec-2017 19:46:26 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Dec-2017 19:46:26 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Dec-2017 19:46:26 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Dec-2017 19:46:26 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:307-357}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Dec-2017 19:46:50 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 346
+[12-Dec-2017 19:46:50 UTC] PHP Stack trace:
+[12-Dec-2017 19:46:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Dec-2017 19:46:50 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[12-Dec-2017 19:46:50 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Dec-2017 19:46:50 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Dec-2017 19:46:50 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Dec-2017 19:46:50 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Dec-2017 19:46:50 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Dec-2017 19:46:50 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Dec-2017 19:46:50 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:307-357}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Dec-2017 19:47:55 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 346
+[12-Dec-2017 19:47:55 UTC] PHP Stack trace:
+[12-Dec-2017 19:47:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[12-Dec-2017 19:47:55 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[12-Dec-2017 19:47:55 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[12-Dec-2017 19:47:55 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[12-Dec-2017 19:47:55 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[12-Dec-2017 19:47:55 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[12-Dec-2017 19:47:55 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[12-Dec-2017 19:47:55 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[12-Dec-2017 19:47:55 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:307-357}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[17-Dec-2017 18:44:13 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 365
+[17-Dec-2017 18:44:13 UTC] PHP Stack trace:
+[17-Dec-2017 18:44:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[17-Dec-2017 18:44:13 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[17-Dec-2017 18:44:13 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[17-Dec-2017 18:44:13 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[17-Dec-2017 18:44:13 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[17-Dec-2017 18:44:13 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[17-Dec-2017 18:44:13 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[17-Dec-2017 18:44:13 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[17-Dec-2017 18:44:13 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:326-376}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[17-Dec-2017 18:44:22 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 365
+[17-Dec-2017 18:44:22 UTC] PHP Stack trace:
+[17-Dec-2017 18:44:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[17-Dec-2017 18:44:22 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[17-Dec-2017 18:44:22 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[17-Dec-2017 18:44:22 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[17-Dec-2017 18:44:22 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[17-Dec-2017 18:44:22 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[17-Dec-2017 18:44:22 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[17-Dec-2017 18:44:22 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[17-Dec-2017 18:44:22 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:326-376}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:07:21 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 366
+[19-Dec-2017 03:07:21 UTC] PHP Stack trace:
+[19-Dec-2017 03:07:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 03:07:21 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 03:07:21 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 03:07:21 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 03:07:21 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 03:07:21 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 03:07:21 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 03:07:21 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:07:21 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:327-377}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:08:49 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 366
+[19-Dec-2017 03:08:49 UTC] PHP Stack trace:
+[19-Dec-2017 03:08:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 03:08:49 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 03:08:49 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 03:08:49 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 03:08:49 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 03:08:49 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 03:08:49 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 03:08:49 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:08:49 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:327-377}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:09:11 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 366
+[19-Dec-2017 03:09:11 UTC] PHP Stack trace:
+[19-Dec-2017 03:09:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 03:09:11 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 03:09:11 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 03:09:11 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 03:09:11 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 03:09:11 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 03:09:11 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 03:09:11 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:09:11 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:327-377}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:12:26 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 366
+[19-Dec-2017 03:12:26 UTC] PHP Stack trace:
+[19-Dec-2017 03:12:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 03:12:26 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 03:12:26 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 03:12:26 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 03:12:26 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 03:12:26 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 03:12:26 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 03:12:26 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:12:26 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:327-377}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:56:22 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 366
+[19-Dec-2017 03:56:22 UTC] PHP Stack trace:
+[19-Dec-2017 03:56:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 03:56:22 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 03:56:22 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 03:56:22 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 03:56:22 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 03:56:22 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 03:56:22 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 03:56:22 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:56:22 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:327-377}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:56:34 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 366
+[19-Dec-2017 03:56:34 UTC] PHP Stack trace:
+[19-Dec-2017 03:56:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 03:56:34 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 03:56:34 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 03:56:34 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 03:56:34 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 03:56:34 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 03:56:34 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 03:56:34 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 03:56:34 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:327-377}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 06:32:48 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[19-Dec-2017 06:32:48 UTC] PHP Stack trace:
+[19-Dec-2017 06:32:48 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 06:32:48 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 06:32:48 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 06:32:48 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 06:32:48 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 06:32:48 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 06:32:48 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 06:32:48 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 06:32:48 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 06:53:10 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[19-Dec-2017 06:53:10 UTC] PHP Stack trace:
+[19-Dec-2017 06:53:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 06:53:10 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 06:53:10 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 06:53:10 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 06:53:10 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 06:53:10 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 06:53:10 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 06:53:10 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 06:53:10 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 20:49:58 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[19-Dec-2017 20:49:58 UTC] PHP Stack trace:
+[19-Dec-2017 20:49:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 20:49:58 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 20:49:58 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 20:49:58 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 20:49:58 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 20:49:58 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 20:49:58 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 20:49:58 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 20:49:58 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 20:52:00 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[19-Dec-2017 20:52:00 UTC] PHP Stack trace:
+[19-Dec-2017 20:52:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[19-Dec-2017 20:52:00 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[19-Dec-2017 20:52:00 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[19-Dec-2017 20:52:00 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[19-Dec-2017 20:52:00 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[19-Dec-2017 20:52:00 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[19-Dec-2017 20:52:00 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[19-Dec-2017 20:52:00 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[19-Dec-2017 20:52:00 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 14:20:51 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[20-Dec-2017 14:20:51 UTC] PHP Stack trace:
+[20-Dec-2017 14:20:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[20-Dec-2017 14:20:51 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[20-Dec-2017 14:20:51 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[20-Dec-2017 14:20:51 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[20-Dec-2017 14:20:51 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[20-Dec-2017 14:20:51 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[20-Dec-2017 14:20:51 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[20-Dec-2017 14:20:51 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 14:20:51 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 17:09:02 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[20-Dec-2017 17:09:02 UTC] PHP Stack trace:
+[20-Dec-2017 17:09:02 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[20-Dec-2017 17:09:02 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[20-Dec-2017 17:09:02 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[20-Dec-2017 17:09:02 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[20-Dec-2017 17:09:02 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[20-Dec-2017 17:09:02 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[20-Dec-2017 17:09:02 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[20-Dec-2017 17:09:02 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 17:09:02 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 19:24:14 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[20-Dec-2017 19:24:14 UTC] PHP Stack trace:
+[20-Dec-2017 19:24:14 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[20-Dec-2017 19:24:14 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[20-Dec-2017 19:24:14 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[20-Dec-2017 19:24:14 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[20-Dec-2017 19:24:14 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[20-Dec-2017 19:24:14 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[20-Dec-2017 19:24:14 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[20-Dec-2017 19:24:14 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 19:24:14 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 19:24:30 UTC] PHP Fatal error:  Call to a member function upload() on a non-object in /home/ubuntu/workspace/models/juntas.php on line 368
+[20-Dec-2017 19:24:30 UTC] PHP Stack trace:
+[20-Dec-2017 19:24:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/api/index.php:0
+[20-Dec-2017 19:24:30 UTC] PHP   2. Slim\Slim->run() /home/ubuntu/workspace/api/index.php:25
+[20-Dec-2017 19:24:30 UTC] PHP   3. Slim\Middleware\PrettyExceptions->call() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1254
+[20-Dec-2017 19:24:30 UTC] PHP   4. Slim\Middleware\MethodOverride->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/PrettyExceptions.php:67
+[20-Dec-2017 19:24:30 UTC] PHP   5. Slim\Middleware\Flash->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/MethodOverride.php:92
+[20-Dec-2017 19:24:30 UTC] PHP   6. Slim\Slim->call() /home/ubuntu/workspace/api/libs/Slim/Middleware/Flash.php:85
+[20-Dec-2017 19:24:30 UTC] PHP   7. Slim\Route->dispatch() /home/ubuntu/workspace/api/libs/Slim/Slim.php:1307
+[20-Dec-2017 19:24:30 UTC] PHP   8. call_user_func_array:{/home/ubuntu/workspace/api/libs/Slim/Route.php:436}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436
+[20-Dec-2017 19:24:30 UTC] PHP   9. {closure:/home/ubuntu/workspace/models/juntas.php:329-379}() /home/ubuntu/workspace/api/libs/Slim/Route.php:436

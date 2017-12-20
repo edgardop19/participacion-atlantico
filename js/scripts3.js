@@ -1,3 +1,4 @@
+
 var app = angular.module('admin', ['ngRoute','datatables']);
 
 
@@ -22,8 +23,24 @@ var app = angular.module('admin', ['ngRoute','datatables']);
                   
                   
                    $('#juntastable').DataTable();
-                  
-                   
+    				
+    				$('#CrearJAC').click(function() {
+    					console.log("click");
+    					$('#ModalNuevaJAC').modal('hide');
+					});
+    				
+    				$('#EnviarC').click(function() {
+    					$('#ModalNuevoCont').modal('hide');
+					});
+					
+				
+					
+						
+					$('#EnviarD').click(function() {
+    					$('#ModalNuevoDoc').modal('hide');
+					});
+
+
                }
             };
          }]);
@@ -68,3 +85,8 @@ app.config(['$routeProvider',
 			redirectTo: '/'
 		});
   }]);
+  
+  $(document).on("click", "#CrearJAC", function() {
+
+  	$('#ModalNuevaJAC').modal('hide');
+});

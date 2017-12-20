@@ -17,10 +17,12 @@
 
             <!-- Page Content -->
             <div id="page-content-wrapper" style="height:100%;">
-                <div class="container-fluid">
+                <div class="container-fluid" ng-init="getMunicipio()">
                     <div class="row">
                         <div class="col-lg-12" style="margin-bottom:15px;">
-                            <h1>Juntas de acción comunal Departamento del Atlántico</h1>
+                            <h2>Juntas de acción comunal Departamento del Atlántico</h2>
+                            <h2>{{municipioSel[0].Nombre}}</h2>
+                            
                             <!--<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                             <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
                             <a class="btn btn-primary" href="#/">Volver al inicio</a>

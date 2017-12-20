@@ -82,25 +82,25 @@
                               <li class="dropdown-submenu">
                                 <a tabindex="-1" >Subdirecciones</a>
                                 <ul class="dropdown-menu">
-                                  <li><a tabindex="-1" href="/docp/ddhh.pdf">Derechos Humanos</a></li>
+                                  <li><a tabindex="-1" href="/jac/docp/ddhh.pdf">Derechos Humanos</a></li>
                                   <li><a href="#/victimas">Víctimas</a></li>
                                 </ul>
                               </li>
                               <li class="divider"></li>
                               <li >
-                                <a tabindex="-1" href="docs/DECRETO 2350.pdf">Decreto 2350 JAC</a>
+                                <a tabindex="-1" href="/jac/docs/DECRETO 2350.pdf">Decreto 2350 JAC</a>
                               </li>
                               <li class="dropdown-submenu">
                                 <a tabindex="-1" >Elecciones de JAC</a>
                                 <ul id="list" class="dropdown-menu">
-                                  <li><a tabindex="-1" href="/docp/8. REGISTRO DE POSTULACIONES.pdf">Postulaciónes</a></li>
-                                  <li><a href="/docp/9. POSTULACION LISTA.pdf">Postulación lista</a></li>
-                                  <li><a href="/docp/10. POSTULACION PLANCHA.pdf">Postulación plancha</a></li>
-                                  <li><a href="/docp/7. DIRECTORIO.pdf">Directorio</a></li>
-                                  <li><a href="/docp/6. REGISTRO DE VOTANTES.pdf">Registro de votantes</a></li>
-                                  <li><a href="/docp/5. RIRE.pdf">Reporte inicial RIRE</a></li>
-                                  <li><a href="/docp/2. ACTA PARCIAL DE ESCRUTINIOS.pdf">Actas de escritinios</a></li>
-                                  <li><a href="/docp/3. ACTA FINAL DE ELECCION DIRECTA.pdf">Acta final de elección</a></li>
+                                  <li><a tabindex="-1" href="/jac/docp/8. REGISTRO DE POSTULACIONES.pdf">Postulaciónes</a></li>
+                                  <li><a href="/jac/docp/9. POSTULACION LISTA.pdf">Postulación lista</a></li>
+                                  <li><a href="/jac/docp/10. POSTULACION PLANCHA.pdf">Postulación plancha</a></li>
+                                  <li><a href="/jac/docp/7. DIRECTORIO.pdf">Directorio</a></li>
+                                  <li><a href="/jac/docp/6. REGISTRO DE VOTANTES.pdf">Registro de votantes</a></li>
+                                  <li><a href="/jac/docp/5. RIRE.pdf">Reporte inicial RIRE</a></li>
+                                  <li><a href="/jac/docp/2. ACTA PARCIAL DE ESCRUTINIOS.pdf">Actas de escritinios</a></li>
+                                  <li><a href="/jac/docp/3. ACTA FINAL DE ELECCION DIRECTA.pdf">Acta final de elección</a></li>
                                 </ul>
                               </li>
                             </ul>
@@ -130,7 +130,7 @@
           <div class="row">
             <div class="col-sm-10 infoFooter">
                 <p class="infoFooter"> © 1998-2015 Gobernación del Atlántico - Calle 40 Cra. 45 y 46 - Barranquilla, Colombia </br>
-                  Teléfono (57+0*5)3307000 - Fax (57+0*5)3307444 - Línea Gratuita 018000425888 - Código DANE: 08-000 Código Postal 080003 </br>
+                  Teléfono (57+035)3307000 - Fax (57+035)3307444 - Línea Gratuita 018000425888 - Código DANE: 08-000 Código Postal 080003 </br>
                   NIT Dpto del Atlántico: 890102006-1 - <a href="http://http://www.atlantico.gov.co/index.php/condiciones-de-uso">Condiciones de Uso de la Información</a> - <a href="http://www.atlantico.gov.co/index.php/presentacion-56985">Quejas y Reclamos</a></br>
                   <a href="http://www.atlantico.gov.co/index.php/presentacion-56985">Horario de Atención</a> - <a href="http://www.atlantico.gov.co/index.php/directorio-general-50105">Contáctenos</a> - <a href="http://www.atlantico.gov.co/index.php/notificaciones-judiciales">Notificaciones Judiciales</a>
                 </p>
