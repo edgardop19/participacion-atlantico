@@ -248,7 +248,7 @@ $app->post('/juntas/upload', function() use ($app) {
 			$page2Insert['FECHA']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
 		$page2Insert['PALABRAS_CLAVES']=$_POST['palabras'];
 		$page2Insert['CODJUNTA']=$_POST['juntaId'];
-		$page2Insert['RUTA']="/docs/" . $file->getNameWithExtension();
+		$page2Insert['RUTA']="/jac/docs/" . $file->getNameWithExtension();
 	
 	
         $column_names = array('TIPO','DESCRIPCION', 'FECHA', 'PALABRAS_CLAVES','CODJUNTA','RUTA');
@@ -276,7 +276,7 @@ $app->post('/juntas/upload2', function() use ($app) {
     $page2Insert= array();
 		$page2Insert['TITULO']=$_POST['titulo'];
 		$page2Insert['INFORMACION']=$_POST['descripcion'];
-		$page2Insert['RUTA']="/imgs/" . $file->getNameWithExtension();
+		$page2Insert['RUTA']="/jac/imgs/" . $file->getNameWithExtension();
 		$page2Insert['Ubicacion']=$_POST['ubicacion'];
 			$page2Insert['Fecha_creacion']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
 			$page2Insert['Fecha_actualizacion']=$hoy['mday']."/".$hoy['mon']."/".$hoy['year'];
@@ -349,7 +349,7 @@ $app->post('/juntas/updatecont', function() use ($app) {
 			try{ 
                 $file = new \Upload\File('archivo', $storage);
                 unlink('../'.$ruta);
-			    $pages2upload['RUTA']="/imgs/" . $file->getNameWithExtension();
+			    $pages2upload['RUTA']="/jac/imgs/" . $file->getNameWithExtension();
 			}catch(\Exception $e){}
 		
 			$pages2upload['UBICACION']= $_POST['UBICACION'];
