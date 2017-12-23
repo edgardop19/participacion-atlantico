@@ -35,9 +35,12 @@
       <tr ng-repeat="cont in conts">
         <td>{{cont.TITULO}}</td>
         <td>{{cont.INFORMACION}}</td>
-        <td>{{cont.Ubicacion}}</td>
+        <td ng-if="cont.Ubicacion == 1">Comunicaciones</td>
+        <td ng-if="cont.Ubicacion == 2">Galeria</td>
+        <td ng-if="cont.Ubicacion == 3">Scroll principal</td>
         <td>{{cont.Fecha_actualizacion}}</td>
-         <td>{{cont.Estado}}</td>
+        <td ng-if="cont.Estado == 1">Activo</td>
+        <td ng-if="cont.Estado == 2">Inactivo</td>
          <td> 
          <a href="#/actc/{{cont.ID}}">Editar</a>
           <button class="btn btn-primary " name="Enviar" type="submit" ng-click="deleteCont(cont)">

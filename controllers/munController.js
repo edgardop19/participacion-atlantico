@@ -141,7 +141,7 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
                 type: 'application/pdf' }), url = $window.URL || $window.webkitURL;
             $scope.fileUrl = $sce.trustAsResourceUrl(url.createObjectURL(file));
         	});
-            $window.open('https://participacion-atlantico-edgardop19.c9users.io/jac/docs/filename.pdf', '_blank');
+            $window.open('https://participacion-atlantico-edgardop19.c9users.io/docs/filename.pdf', '_blank');
          }	
 	    	});
          
