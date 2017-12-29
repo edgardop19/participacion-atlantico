@@ -134,14 +134,14 @@ app.controller('munController', function ($scope, $rootScope, $routeParams, $loc
          }
          else{
             alert("Certificado generado exitosamente !");
-           var pdfURL = "../docs/filename.pdf";
+           var pdfURL = "../participacion-atlantico/docs/filename.pdf";
             $http.get(pdfURL, { responseType: 'arraybuffer' })
         	.then(function success(response) {
         		 var file = new Blob([response.data], {
                 type: 'application/pdf' }), url = $window.URL || $window.webkitURL;
             $scope.fileUrl = $sce.trustAsResourceUrl(url.createObjectURL(file));
         	});
-            $window.open('https://participacion-atlantico-edgardop19.c9users.io/docs/filename.pdf', '_blank');
+            $window.open(pdfURL, '_blank');
          }	
 	    	});
          

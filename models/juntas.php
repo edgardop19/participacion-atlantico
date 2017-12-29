@@ -311,7 +311,7 @@ $app->post('/juntas/updatejac', function() use ($app) {
 			$pages2upload['resolucion']= $_POST['resolucion'];	
 			$pages2upload['nombre']= $_POST['nombre'];
 			$pages2upload['cc']= $_POST['cc'];
-			echo($pages2upload);
+			//echo($pages2upload);
 	
      $column_names = array('cod','idMunicipio', 'jurisdiccion','resolucion','nombre','cc');
 		
@@ -354,7 +354,7 @@ $app->post('/juntas/updatecont', function() use ($app) {
 		
 			$pages2upload['UBICACION']= $_POST['UBICACION'];
 			$pages2upload['ESTADO']= $_POST['ESTADO'];
-			echo($pages2upload);
+			//echo($pages2upload);
 	
      $column_names = array('ID','TITULO', 'INFORMACION','RUTA','UBICACION','ESTADO');
 		
@@ -525,7 +525,7 @@ $app->post('/juntas/generate', function() use ($app) {
       $pdf->Cell(40,10,'EDGARDO MENDOZA ORTEGA');
        $pdf->Ln(8);
       $pdf->Cell(40,10,utf8_decode("SubSecretario de Participación Comunitaria y Convivencia. "));
-    $pdf->Output(F,'../docs/filename.pdf'); 
+    $pdf->Output('F','../docs/filename.pdf'); 
     $response["status"]="OK";
      echoResponse(200, $response);
     }
